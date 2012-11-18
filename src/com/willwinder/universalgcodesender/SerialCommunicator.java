@@ -329,6 +329,22 @@ public class SerialCommunicator implements SerialPortEventListener{
         }
     }
     
+    void statusSend() throws IOException {
+        this.sendMessageToConsoleListener("\n**** Asking for Status. ****\n");
+        
+        if (this.realTimeMode) {
+            this.sendByteImmediately(CommUtils.GRBL_STATUS_COMMAND);
+        }
+    }
+    
+    void parserStatusSend() throws IOException {
+        this.sendMessageToConsoleListener("\n**** Asking for Parser Status. ****\n");
+        
+        if (this.realTimeMode) {
+            this.sendStringToComm(CommUtils.GRBL_PARSER_STATE + "\n");
+        }
+    }
+    
     void resumeSend() throws IOException {
         this.sendMessageToConsoleListener("\n**** Resuming file transfer. ****\n");
                 
