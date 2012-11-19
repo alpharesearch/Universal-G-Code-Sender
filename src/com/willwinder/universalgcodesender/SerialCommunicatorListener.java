@@ -14,5 +14,6 @@ public interface SerialCommunicatorListener {
     void commandSent(GcodeCommand command);
     void commandComplete(GcodeCommand command);
     void messageForConsole(String msg);
+    void messageForDisplay(Coordinate coords);
     String preprocessCommand(String command);
 }

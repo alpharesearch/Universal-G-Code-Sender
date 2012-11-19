@@ -162,6 +162,13 @@ public class SerialCommunicator implements SerialPortEventListener{
          printStream.close();     
     }
     
+        void sendQuiteStringToComm(String command) {
+         // Send command to the serial port.
+         PrintStream printStream = new PrintStream(this.out);
+         printStream.print(command);
+         printStream.close();     
+    }
+    
     /**
      * Immediately sends a byte, used for real-time commands.
      */
@@ -332,17 +339,17 @@ public class SerialCommunicator implements SerialPortEventListener{
     void statusSend() throws IOException {
         this.sendMessageToConsoleListener("\n**** Asking for Status. ****\n");
         
-        if (this.realTimeMode) {
+        
             this.sendByteImmediately(CommUtils.GRBL_STATUS_COMMAND);
-        }
+        
     }
     
     void parserStatusSend() throws IOException {
         this.sendMessageToConsoleListener("\n**** Asking for Parser Status. ****\n");
         
-        if (this.realTimeMode) {
+        
             this.sendStringToComm(CommUtils.GRBL_PARSER_STATE + "\n");
-        }
+        
     }
     
     void resumeSend() throws IOException {
@@ -392,7 +399,8 @@ public class SerialCommunicator implements SerialPortEventListener{
     // Processes a serial response
     void responseMessage( String response ) {
         // If not file mode, send it to the console without processing.
-        this.sendMessageToConsoleListener(response + "\n");
+        if(!this.sendMessageToDisplayListener(response))
+            this.sendMessageToConsoleListener(response + "\n");
 
         // Check if was 'ok' or 'error'.
         if (GcodeCommand.isOkErrorResponse(response)) {
@@ -456,5 +464,13 @@ public class SerialCommunicator implements SerialPortEventListener{
         if (this.commConsoleListener != null) {
             this.commConsoleListener.messageForConsole(msg);
         }
+    }
+    
+    boolean sendMessageToDisplayListener(String msg) {
+        Coordinate coords = new Coordinate(msg);
+        if (this.commConsoleListener != null) {
+            this.commConsoleListener.messageForDisplay(coords);
+        }
+        return coords.s;
     }
 }
