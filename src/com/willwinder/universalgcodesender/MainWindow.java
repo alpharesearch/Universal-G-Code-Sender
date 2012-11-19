@@ -65,8 +65,57 @@ implements SerialCommunicatorListener, KeyListener {
         consoleTextArea = new javax.swing.JTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
         commandTable = new javax.swing.JTable();
-        controlContextTabbedPane = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        commPortComboBox = new javax.swing.JComboBox();
+        baudrateSelectionComboBox = new javax.swing.JComboBox();
+        opencloseButton = new javax.swing.JButton();
+        refreshButton = new javax.swing.JButton();
+        lineBreakRN = new javax.swing.JRadioButton();
+        lineBreakN = new javax.swing.JRadioButton();
+        lineBreakNR = new javax.swing.JRadioButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        askParameter = new javax.swing.JButton();
+        sendKill = new javax.swing.JButton();
+        toggleGcodCheckMode = new javax.swing.JButton();
+        sendHoming = new javax.swing.JButton();
+        askStatus = new javax.swing.JButton();
+        scrollWindowCheckBox = new javax.swing.JCheckBox();
+        supressCheckBox = new javax.swing.JCheckBox();
+        manualControlPanel = new javax.swing.JPanel();
+        xPlusButton = new javax.swing.JButton();
+        xMinusButton = new javax.swing.JButton();
+        yMinusButton = new javax.swing.JButton();
+        zPlusButton = new javax.swing.JButton();
+        zMinusButton = new javax.swing.JButton();
+        yPlusButton = new javax.swing.JButton();
+        stepSizeLabel = new javax.swing.JLabel();
+        stepSizeSpinner = new javax.swing.JSpinner();
+        jPanel6 = new javax.swing.JPanel();
+        xLocationLabel = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        zLocationLabel = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        yLocationLabel = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        xLocationLabel1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        yLocationLabel1 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        zLocationLabel1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        LabelStatus1 = new javax.swing.JLabel();
+        LabelStatus2 = new javax.swing.JLabel();
+        askParserStatus = new javax.swing.JButton();
+        resetCoordinatesButton = new javax.swing.JButton();
+        returnToZeroButton = new javax.swing.JButton();
+        performHomingCycleButton = new javax.swing.JButton();
+        updateCheckBox = new javax.swing.JCheckBox();
         commandLabel = new javax.swing.JLabel();
         commandTextField = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
@@ -88,60 +137,11 @@ implements SerialCommunicatorListener, KeyListener {
         remainingRowsLabel = new javax.swing.JLabel();
         remainingTimeLabel = new javax.swing.JLabel();
         remainingTimeValueLabel = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        stepSizeSpinner = new javax.swing.JSpinner();
-        stepSizeLabel = new javax.swing.JLabel();
-        manualControlPanel = new javax.swing.JPanel();
-        xPlusButton = new javax.swing.JButton();
-        xMinusButton = new javax.swing.JButton();
-        yMinusButton = new javax.swing.JButton();
-        zPlusButton = new javax.swing.JButton();
-        zMinusButton = new javax.swing.JButton();
-        yPlusButton = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
-        xLocationLabel = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        zLocationLabel = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        yLocationLabel = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        xLocationLabel1 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        yLocationLabel1 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        zLocationLabel1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        LabelStatus1 = new javax.swing.JLabel();
-        LabelStatus2 = new javax.swing.JLabel();
-        resetCoordinatesButton = new javax.swing.JButton();
-        returnToZeroButton = new javax.swing.JButton();
-        performHomingCycleButton = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        commPortComboBox = new javax.swing.JComboBox();
-        baudrateSelectionComboBox = new javax.swing.JComboBox();
-        opencloseButton = new javax.swing.JButton();
-        refreshButton = new javax.swing.JButton();
-        lineBreakRN = new javax.swing.JRadioButton();
-        lineBreakN = new javax.swing.JRadioButton();
-        lineBreakNR = new javax.swing.JRadioButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        askParameter = new javax.swing.JButton();
-        askParserStatus = new javax.swing.JButton();
-        sendKill = new javax.swing.JButton();
-        toggleGcodCheckMode = new javax.swing.JButton();
-        sendHoming = new javax.swing.JButton();
-        askStatus = new javax.swing.JButton();
-        scrollWindowCheckBox = new javax.swing.JCheckBox();
-        supressCheckBox = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(970, 470));
+
+        jTabbedPane2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         consoleTextArea.setColumns(20);
         consoleTextArea.setRows(5);
@@ -183,7 +183,520 @@ implements SerialCommunicatorListener, KeyListener {
 
         jTabbedPane2.addTab("Command Table", jScrollPane1);
 
-        controlContextTabbedPane.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Connection"));
+        jPanel3.setMaximumSize(new java.awt.Dimension(325, 125));
+        jPanel3.setMinimumSize(new java.awt.Dimension(325, 125));
+        jPanel3.setName("Connection");
+
+        baudrateSelectionComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2400", "4800", "9600", "19200", "38400", "57600", "115200" }));
+        baudrateSelectionComboBox.setSelectedIndex(6);
+        baudrateSelectionComboBox.setToolTipText("Select baudrate to use for the serial port.");
+        baudrateSelectionComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                baudrateSelectionComboBoxActionPerformed(evt);
+            }
+        });
+
+        opencloseButton.setText("Open");
+        opencloseButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opencloseButtonActionPerformed(evt);
+            }
+        });
+
+        refreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/refresh.gif"))); // NOI18N
+        refreshButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                refreshButtonActionPerformed(evt);
+            }
+        });
+
+        lineBreakGroup.add(lineBreakRN);
+        lineBreakRN.setText("\\r\\n");
+        lineBreakRN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lineBreakRNActionPerformed(evt);
+            }
+        });
+
+        lineBreakGroup.add(lineBreakN);
+        lineBreakN.setText("\\n");
+        lineBreakN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lineBreakNActionPerformed(evt);
+            }
+        });
+
+        lineBreakGroup.add(lineBreakNR);
+        lineBreakNR.setText("\\n\\r");
+        lineBreakNR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lineBreakNRActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Baud Rate:");
+
+        jLabel5.setText("Line Terminator:");
+
+        jLabel7.setText("Serial Port:");
+
+        org.jdesktop.layout.GroupLayout jPanel3Layout = new org.jdesktop.layout.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel3Layout.createSequentialGroup()
+                .add(12, 12, 12)
+                .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jPanel3Layout.createSequentialGroup()
+                        .add(jLabel7)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                        .add(commPortComboBox, 0, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .add(jPanel3Layout.createSequentialGroup()
+                        .add(jLabel5)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                        .add(lineBreakN)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(lineBreakNR)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(lineBreakRN)
+                        .add(0, 0, Short.MAX_VALUE))
+                    .add(jPanel3Layout.createSequentialGroup()
+                        .add(jLabel3)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                        .add(baudrateSelectionComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .add(refreshButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(opencloseButton)))
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel3Layout.createSequentialGroup()
+                .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(commPortComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(jLabel7))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                        .add(jLabel3)
+                        .add(baudrateSelectionComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(refreshButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 24, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(opencloseButton))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel5)
+                    .add(lineBreakNR)
+                    .add(lineBreakRN)
+                    .add(lineBreakN))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Control"));
+        jPanel5.setName("Control");
+
+        askParameter.setText("$#");
+        askParameter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                askParameterActionPerformed(evt);
+            }
+        });
+
+        sendKill.setText("$X");
+        sendKill.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sendKillActionPerformed(evt);
+            }
+        });
+
+        toggleGcodCheckMode.setText("$C");
+        toggleGcodCheckMode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                toggleGcodCheckModeActionPerformed(evt);
+            }
+        });
+
+        sendHoming.setText("$H");
+        sendHoming.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sendHomingActionPerformed(evt);
+            }
+        });
+
+        askStatus.setText("?");
+        askStatus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                askStatusActionPerformed(evt);
+            }
+        });
+
+        scrollWindowCheckBox.setSelected(true);
+        scrollWindowCheckBox.setText("Scroll");
+        scrollWindowCheckBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                scrollWindowCheckBoxActionPerformed(evt);
+            }
+        });
+
+        supressCheckBox.setSelected(true);
+        supressCheckBox.setText("Supress");
+        supressCheckBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                supressCheckBoxActionPerformed(evt);
+            }
+        });
+
+        manualControlPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        xPlusButton.setText("X+");
+        xPlusButton.setToolTipText("use the right arrow hotkey");
+        xPlusButton.setEnabled(false);
+        xPlusButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                xPlusButtonActionPerformed(evt);
+            }
+        });
+
+        xMinusButton.setText("X-");
+        xMinusButton.setToolTipText("use the left arrow hotkey");
+        xMinusButton.setEnabled(false);
+        xMinusButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                xMinusButtonActionPerformed(evt);
+            }
+        });
+
+        yMinusButton.setText("Y-");
+        yMinusButton.setToolTipText("use the down arrow hotkey");
+        yMinusButton.setEnabled(false);
+        yMinusButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yMinusButtonActionPerformed(evt);
+            }
+        });
+
+        zPlusButton.setText("Z+");
+        zPlusButton.setToolTipText("use the page up hotkey");
+        zPlusButton.setEnabled(false);
+        zPlusButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                zPlusButtonActionPerformed(evt);
+            }
+        });
+
+        zMinusButton.setText("Z-");
+        zMinusButton.setToolTipText("use the page down hotkey");
+        zMinusButton.setEnabled(false);
+        zMinusButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                zMinusButtonActionPerformed(evt);
+            }
+        });
+
+        yPlusButton.setText("Y+");
+        yPlusButton.setToolTipText("use the up arrow hotkey");
+        yPlusButton.setEnabled(false);
+        yPlusButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yPlusButtonActionPerformed(evt);
+            }
+        });
+
+        stepSizeLabel.setText("Step size:");
+
+        stepSizeSpinner.setModel(new StepSizeSpinnerModel(1.0, 0.0, null, 1.0));
+        stepSizeSpinner.setEnabled(false);
+        stepSizeSpinner.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                stepSizeSpinnerStateChanged(evt);
+            }
+        });
+
+        org.jdesktop.layout.GroupLayout manualControlPanelLayout = new org.jdesktop.layout.GroupLayout(manualControlPanel);
+        manualControlPanel.setLayout(manualControlPanelLayout);
+        manualControlPanelLayout.setHorizontalGroup(
+            manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(manualControlPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(xMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(yPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(yMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(xPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(zPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(zMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 24, Short.MAX_VALUE)
+                .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, stepSizeLabel)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, stepSizeSpinner, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 70, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        manualControlPanelLayout.setVerticalGroup(
+            manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(manualControlPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(manualControlPanelLayout.createSequentialGroup()
+                        .add(26, 26, 26)
+                        .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                                .add(xMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(xPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                            .add(manualControlPanelLayout.createSequentialGroup()
+                                .add(59, 59, 59)
+                                .add(stepSizeLabel)))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .add(stepSizeSpinner, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(manualControlPanelLayout.createSequentialGroup()
+                        .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(yPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(zPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(yMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(zMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(0, 0, Short.MAX_VALUE)))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        xLocationLabel.setText("0");
+
+        jLabel2.setText("X:");
+
+        jLabel8.setText("Work Position:");
+
+        jLabel6.setText("Z:");
+
+        zLocationLabel.setText("0");
+
+        jLabel4.setText("Y:");
+
+        yLocationLabel.setText("0");
+
+        jLabel9.setText("Machine Position:");
+
+        jLabel10.setText("X:");
+
+        xLocationLabel1.setText("0");
+
+        jLabel11.setText("Y:");
+
+        yLocationLabel1.setText("0");
+
+        jLabel12.setText("Z:");
+
+        zLocationLabel1.setText("0");
+
+        jLabel1.setText("Status:");
+
+        LabelStatus1.setText("not updated yet");
+
+        LabelStatus2.setText("not updated yet");
+
+        askParserStatus.setText("$G");
+        askParserStatus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                askParserStatusActionPerformed(evt);
+            }
+        });
+
+        org.jdesktop.layout.GroupLayout jPanel6Layout = new org.jdesktop.layout.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jPanel6Layout.createSequentialGroup()
+                        .add(jLabel8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 104, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(37, 37, 37)
+                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(jPanel6Layout.createSequentialGroup()
+                                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                                    .add(jLabel11)
+                                    .add(jLabel12)
+                                    .add(jLabel10))
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(xLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .add(zLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .add(yLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .add(56, 56, 56))
+                            .add(jPanel6Layout.createSequentialGroup()
+                                .add(jLabel9)
+                                .addContainerGap())))
+                    .add(jPanel6Layout.createSequentialGroup()
+                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(jPanel6Layout.createSequentialGroup()
+                                .add(2, 2, 2)
+                                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                                    .add(jLabel4)
+                                    .add(jLabel6)
+                                    .add(jLabel2))
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                                    .add(org.jdesktop.layout.GroupLayout.LEADING, yLocationLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
+                                    .add(org.jdesktop.layout.GroupLayout.LEADING, xLocationLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .add(zLocationLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .add(askParserStatus))
+                        .add(0, 0, Short.MAX_VALUE))
+                    .add(jPanel6Layout.createSequentialGroup()
+                        .add(jLabel1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(LabelStatus1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .add(LabelStatus2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel8)
+                    .add(jLabel9))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(jPanel6Layout.createSequentialGroup()
+                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(jLabel2)
+                            .add(xLocationLabel))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(yLocationLabel)
+                            .add(jLabel4))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(zLocationLabel)
+                            .add(jLabel6)))
+                    .add(jPanel6Layout.createSequentialGroup()
+                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(jLabel10)
+                            .add(xLocationLabel1))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(yLocationLabel1)
+                            .add(jLabel11))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(zLocationLabel1)
+                            .add(jLabel12))))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel1)
+                    .add(LabelStatus1))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(LabelStatus2)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(askParserStatus)
+                .addContainerGap())
+        );
+
+        resetCoordinatesButton.setText("Reset Coordinates");
+        resetCoordinatesButton.setEnabled(false);
+        resetCoordinatesButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resetCoordinatesButtonActionPerformed(evt);
+            }
+        });
+
+        returnToZeroButton.setText("Return to Zero");
+        returnToZeroButton.setEnabled(false);
+        returnToZeroButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                returnToZeroButtonActionPerformed(evt);
+            }
+        });
+
+        performHomingCycleButton.setText("Do Homing Cycle");
+        performHomingCycleButton.setEnabled(false);
+        performHomingCycleButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                performHomingCycleButtonActionPerformed(evt);
+            }
+        });
+
+        updateCheckBox.setSelected(true);
+        updateCheckBox.setText("Update");
+        updateCheckBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateCheckBoxActionPerformed(evt);
+            }
+        });
+
+        org.jdesktop.layout.GroupLayout jPanel5Layout = new org.jdesktop.layout.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel5Layout.createSequentialGroup()
+                .add(20, 20, 20)
+                .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jPanel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(jPanel5Layout.createSequentialGroup()
+                        .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(jPanel5Layout.createSequentialGroup()
+                                .add(returnToZeroButton)
+                                .add(12, 12, 12)
+                                .add(askParameter)
+                                .add(18, 18, 18)
+                                .add(toggleGcodCheckMode))
+                            .add(jPanel5Layout.createSequentialGroup()
+                                .add(scrollWindowCheckBox)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                                .add(supressCheckBox)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(updateCheckBox))
+                            .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                                .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel5Layout.createSequentialGroup()
+                                    .add(resetCoordinatesButton)
+                                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                                    .add(askStatus))
+                                .add(jPanel5Layout.createSequentialGroup()
+                                    .add(performHomingCycleButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 158, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(12, 12, 12)
+                                    .add(sendHoming)
+                                    .add(18, 18, 18)
+                                    .add(sendKill))))
+                        .add(0, 0, Short.MAX_VALUE))
+                    .add(manualControlPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        jPanel5Layout.linkSize(new java.awt.Component[] {performHomingCycleButton, resetCoordinatesButton, returnToZeroButton}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
+
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel5Layout.createSequentialGroup()
+                .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(scrollWindowCheckBox)
+                    .add(supressCheckBox)
+                    .add(updateCheckBox))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(manualControlPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(resetCoordinatesButton)
+                    .add(askStatus))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(returnToZeroButton)
+                    .add(toggleGcodCheckMode)
+                    .add(askParameter))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(performHomingCycleButton)
+                    .add(sendHoming)
+                    .add(sendKill))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         commandLabel.setText("Command");
 
@@ -194,30 +707,8 @@ implements SerialCommunicatorListener, KeyListener {
             }
         });
 
-        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel1Layout.createSequentialGroup()
-                        .add(commandLabel)
-                        .add(0, 696, Short.MAX_VALUE))
-                    .add(commandTextField))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .add(commandLabel)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(commandTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(126, Short.MAX_VALUE))
-        );
-
-        controlContextTabbedPane.addTab("Command Mode", jPanel1);
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Send"));
+        jPanel2.setName("Send");
 
         browseButton.setText("Browse");
         browseButton.setEnabled(false);
@@ -304,7 +795,7 @@ implements SerialCommunicatorListener, KeyListener {
                         .add(overrideSpeedValueSpinner, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 59, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(overrideSpeedCheckBox)
-                        .addContainerGap(292, Short.MAX_VALUE))
+                        .addContainerGap())
                     .add(jPanel2Layout.createSequentialGroup()
                         .add(22, 22, 22)
                         .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
@@ -320,7 +811,7 @@ implements SerialCommunicatorListener, KeyListener {
                                 .add(remainingRowsLabel)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                                 .add(remainingRowsValueLabel)))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 278, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 265, Short.MAX_VALUE)
                         .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel2Layout.createSequentialGroup()
                                 .add(remainingTimeLabel)
@@ -365,522 +856,7 @@ implements SerialCommunicatorListener, KeyListener {
                     .add(remainingRowsValueLabel)
                     .add(remainingTimeValueLabel)
                     .add(remainingTimeLabel))
-                .addContainerGap(41, Short.MAX_VALUE))
-        );
-
-        controlContextTabbedPane.addTab("File Mode", jPanel2);
-
-        stepSizeSpinner.setModel(new StepSizeSpinnerModel(1.0, 0.0, null, 1.0));
-        stepSizeSpinner.setEnabled(false);
-        stepSizeSpinner.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                stepSizeSpinnerStateChanged(evt);
-            }
-        });
-
-        stepSizeLabel.setText("Step size:");
-
-        manualControlPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        xPlusButton.setText("X+");
-        xPlusButton.setEnabled(false);
-        xPlusButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                xPlusButtonActionPerformed(evt);
-            }
-        });
-
-        xMinusButton.setText("X-");
-        xMinusButton.setEnabled(false);
-        xMinusButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                xMinusButtonActionPerformed(evt);
-            }
-        });
-
-        yMinusButton.setText("Y-");
-        yMinusButton.setEnabled(false);
-        yMinusButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                yMinusButtonActionPerformed(evt);
-            }
-        });
-
-        zPlusButton.setText("Z+");
-        zPlusButton.setEnabled(false);
-        zPlusButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                zPlusButtonActionPerformed(evt);
-            }
-        });
-
-        zMinusButton.setText("Z-");
-        zMinusButton.setEnabled(false);
-        zMinusButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                zMinusButtonActionPerformed(evt);
-            }
-        });
-
-        yPlusButton.setText("Y+");
-        yPlusButton.setEnabled(false);
-        yPlusButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                yPlusButtonActionPerformed(evt);
-            }
-        });
-
-        org.jdesktop.layout.GroupLayout manualControlPanelLayout = new org.jdesktop.layout.GroupLayout(manualControlPanel);
-        manualControlPanel.setLayout(manualControlPanelLayout);
-        manualControlPanelLayout.setHorizontalGroup(
-            manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(manualControlPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(xMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(yPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(yMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(xPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(zPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(zMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        manualControlPanelLayout.setVerticalGroup(
-            manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(manualControlPanelLayout.createSequentialGroup()
-                .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(manualControlPanelLayout.createSequentialGroup()
-                        .add(38, 38, 38)
-                        .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(xMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(xPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(manualControlPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(yPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(zPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(manualControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(yMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(zMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        xLocationLabel.setText("0");
-
-        jLabel2.setText("X:");
-
-        jLabel8.setText("Work Position:");
-
-        jLabel6.setText("Z:");
-
-        zLocationLabel.setText("0");
-
-        jLabel4.setText("Y:");
-
-        yLocationLabel.setText("0");
-
-        jLabel9.setText("Machine Position:");
-
-        jLabel10.setText("X:");
-
-        xLocationLabel1.setText("0");
-
-        jLabel11.setText("Y:");
-
-        yLocationLabel1.setText("0");
-
-        jLabel12.setText("Z:");
-
-        zLocationLabel1.setText("0");
-
-        jLabel1.setText("Status:");
-
-        LabelStatus1.setText("not updated yet");
-
-        LabelStatus2.setText("not updated yet");
-
-        org.jdesktop.layout.GroupLayout jPanel6Layout = new org.jdesktop.layout.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel6Layout.createSequentialGroup()
-                        .add(jLabel8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 104, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(37, 37, 37)
-                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jPanel6Layout.createSequentialGroup()
-                                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                                    .add(jLabel11)
-                                    .add(jLabel12)
-                                    .add(jLabel10))
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(xLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .add(zLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .add(yLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .add(56, 56, 56))
-                            .add(jPanel6Layout.createSequentialGroup()
-                                .add(jLabel9)
-                                .addContainerGap(40, Short.MAX_VALUE))))
-                    .add(jPanel6Layout.createSequentialGroup()
-                        .add(2, 2, 2)
-                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jLabel4)
-                            .add(jLabel6)
-                            .add(jLabel2))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                            .add(org.jdesktop.layout.GroupLayout.LEADING, yLocationLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
-                            .add(org.jdesktop.layout.GroupLayout.LEADING, xLocationLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(zLocationLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .add(0, 0, Short.MAX_VALUE))
-                    .add(jPanel6Layout.createSequentialGroup()
-                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(LabelStatus2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel6Layout.createSequentialGroup()
-                                .add(jLabel1)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(LabelStatus1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addContainerGap())))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel8)
-                    .add(jLabel9))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(jPanel6Layout.createSequentialGroup()
-                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(jLabel2)
-                            .add(xLocationLabel))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(yLocationLabel)
-                            .add(jLabel4))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(zLocationLabel)
-                            .add(jLabel6)))
-                    .add(jPanel6Layout.createSequentialGroup()
-                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(jLabel10)
-                            .add(xLocationLabel1))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(yLocationLabel1)
-                            .add(jLabel11))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(zLocationLabel1)
-                            .add(jLabel12))))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel1)
-                    .add(LabelStatus1))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(LabelStatus2)
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        resetCoordinatesButton.setText("Reset Coordinates");
-        resetCoordinatesButton.setEnabled(false);
-        resetCoordinatesButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                resetCoordinatesButtonActionPerformed(evt);
-            }
-        });
-
-        returnToZeroButton.setText("Return to Zero");
-        returnToZeroButton.setEnabled(false);
-        returnToZeroButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                returnToZeroButtonActionPerformed(evt);
-            }
-        });
-
-        performHomingCycleButton.setText("Do Homing Cycle");
-        performHomingCycleButton.setEnabled(false);
-        performHomingCycleButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                performHomingCycleButtonActionPerformed(evt);
-            }
-        });
-
-        org.jdesktop.layout.GroupLayout jPanel4Layout = new org.jdesktop.layout.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel4Layout.createSequentialGroup()
-                        .add(stepSizeLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(stepSizeSpinner, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 70, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                        .add(returnToZeroButton)
-                        .add(resetCoordinatesButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(performHomingCycleButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 158, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .add(18, 18, 18)
-                .add(manualControlPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(jPanel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        jPanel4Layout.linkSize(new java.awt.Component[] {performHomingCycleButton, resetCoordinatesButton, returnToZeroButton}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
-
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel4Layout.createSequentialGroup()
-                        .add(manualControlPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(0, 12, Short.MAX_VALUE))
-                    .add(jPanel4Layout.createSequentialGroup()
-                        .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel4Layout.createSequentialGroup()
-                                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(stepSizeLabel)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, stepSizeSpinner, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                                .add(resetCoordinatesButton)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(returnToZeroButton)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(performHomingCycleButton)
-                                .add(0, 0, Short.MAX_VALUE))
-                            .add(jPanel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap())))
-        );
-
-        jPanel4Layout.linkSize(new java.awt.Component[] {stepSizeLabel, stepSizeSpinner}, org.jdesktop.layout.GroupLayout.VERTICAL);
-
-        controlContextTabbedPane.addTab("Manual Control", jPanel4);
-
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Connection"));
-        jPanel3.setMaximumSize(new java.awt.Dimension(325, 125));
-        jPanel3.setMinimumSize(new java.awt.Dimension(325, 125));
-        jPanel3.setName("Connection");
-
-        baudrateSelectionComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2400", "4800", "9600", "19200", "38400", "57600", "115200" }));
-        baudrateSelectionComboBox.setSelectedIndex(6);
-        baudrateSelectionComboBox.setToolTipText("Select baudrate to use for the serial port.");
-        baudrateSelectionComboBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                baudrateSelectionComboBoxActionPerformed(evt);
-            }
-        });
-
-        opencloseButton.setText("Open");
-        opencloseButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opencloseButtonActionPerformed(evt);
-            }
-        });
-
-        refreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/refresh.gif"))); // NOI18N
-        refreshButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                refreshButtonActionPerformed(evt);
-            }
-        });
-
-        lineBreakGroup.add(lineBreakRN);
-        lineBreakRN.setText("\\r\\n");
-        lineBreakRN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lineBreakRNActionPerformed(evt);
-            }
-        });
-
-        lineBreakGroup.add(lineBreakN);
-        lineBreakN.setText("\\n");
-        lineBreakN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lineBreakNActionPerformed(evt);
-            }
-        });
-
-        lineBreakGroup.add(lineBreakNR);
-        lineBreakNR.setText("\\n\\r");
-        lineBreakNR.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lineBreakNRActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setText("Baud Rate:");
-
-        jLabel5.setText("Line Terminator:");
-
-        jLabel7.setText("Serial Port:");
-
-        org.jdesktop.layout.GroupLayout jPanel3Layout = new org.jdesktop.layout.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel3Layout.createSequentialGroup()
-                .add(12, 12, 12)
-                .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel3Layout.createSequentialGroup()
-                        .add(jLabel7)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                        .add(commPortComboBox, 0, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(jPanel3Layout.createSequentialGroup()
-                        .add(jLabel5)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                        .add(lineBreakN)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(lineBreakNR)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(lineBreakRN)
-                        .add(0, 0, Short.MAX_VALUE))
-                    .add(jPanel3Layout.createSequentialGroup()
-                        .add(jLabel3)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                        .add(baudrateSelectionComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 71, Short.MAX_VALUE)
-                        .add(refreshButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(opencloseButton)))
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel3Layout.createSequentialGroup()
-                .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(commPortComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(jLabel7))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                        .add(jLabel3)
-                        .add(baudrateSelectionComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(refreshButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 24, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(opencloseButton))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel5)
-                    .add(lineBreakNR)
-                    .add(lineBreakRN)
-                    .add(lineBreakN))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Debug"));
-
-        askParameter.setText("$#");
-        askParameter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                askParameterActionPerformed(evt);
-            }
-        });
-
-        askParserStatus.setText("$G");
-        askParserStatus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                askParserStatusActionPerformed(evt);
-            }
-        });
-
-        sendKill.setText("$X");
-        sendKill.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sendKillActionPerformed(evt);
-            }
-        });
-
-        toggleGcodCheckMode.setText("$C");
-        toggleGcodCheckMode.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                toggleGcodCheckModeActionPerformed(evt);
-            }
-        });
-
-        sendHoming.setText("$H");
-        sendHoming.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sendHomingActionPerformed(evt);
-            }
-        });
-
-        askStatus.setText("?");
-        askStatus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                askStatusActionPerformed(evt);
-            }
-        });
-
-        scrollWindowCheckBox.setSelected(true);
-        scrollWindowCheckBox.setText("Scroll output window");
-        scrollWindowCheckBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                scrollWindowCheckBoxActionPerformed(evt);
-            }
-        });
-
-        supressCheckBox.setSelected(true);
-        supressCheckBox.setText("Supress");
-        supressCheckBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                supressCheckBoxActionPerformed(evt);
-            }
-        });
-
-        org.jdesktop.layout.GroupLayout jPanel5Layout = new org.jdesktop.layout.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel5Layout.createSequentialGroup()
-                .add(20, 20, 20)
-                .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel5Layout.createSequentialGroup()
-                        .add(scrollWindowCheckBox)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                        .add(supressCheckBox))
-                    .add(jPanel5Layout.createSequentialGroup()
-                        .add(askStatus)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(askParserStatus)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(askParameter)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(toggleGcodCheckMode)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(sendKill)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(sendHoming)))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel5Layout.createSequentialGroup()
-                .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(scrollWindowCheckBox)
-                    .add(supressCheckBox))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(askStatus)
-                    .add(askParserStatus)
-                    .add(askParameter)
-                    .add(toggleGcodCheckMode)
-                    .add(sendKill)
-                    .add(sendHoming))
-                .addContainerGap())
         );
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
@@ -889,29 +865,41 @@ implements SerialCommunicatorListener, KeyListener {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jTabbedPane2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 1202, Short.MAX_VALUE)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(layout.createSequentialGroup()
-                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                            .add(jPanel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(jPanel5, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .add(commandLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(controlContextTabbedPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addContainerGap())))
+                        .add(commandTextField))
+                    .add(jPanel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(jPanel5, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .add(18, 18, 18)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(jTabbedPane2))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(layout.createSequentialGroup()
                         .add(jPanel3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanel5, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(controlContextTabbedPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jTabbedPane2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 497, Short.MAX_VALUE))
+                        .add(jPanel5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(commandLabel)
+                            .add(commandTextField)))
+                    .add(layout.createSequentialGroup()
+                        .add(jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jTabbedPane2)))
+                .addContainerGap())
         );
+
+        jPanel5.getAccessibleContext().setAccessibleName("Control");
+        jPanel2.getAccessibleContext().setAccessibleName("Send");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -981,7 +969,7 @@ implements SerialCommunicatorListener, KeyListener {
     private void opencloseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opencloseButtonActionPerformed
         if( this.opencloseButton.getText().equalsIgnoreCase("open") ) {
             Boolean ret = openCommConnection();
-            t.start();
+            if(updateCheckBox.isSelected()) t.start();
             if (ret) {
                 // Let the command field grab focus.
                 commandTextField.grabFocus();
@@ -996,103 +984,9 @@ implements SerialCommunicatorListener, KeyListener {
         loadPortSelector();
     }//GEN-LAST:event_refreshButtonActionPerformed
 
-    private void browseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseButtonActionPerformed
-        int returnVal = fileChooser.showOpenDialog(this);
-        if (returnVal == JFileChooser.APPROVE_OPTION) {
-            try {
-                fileTextField.setText(fileChooser.getSelectedFile().getAbsolutePath());
-                gcodeFile = fileChooser.getSelectedFile();
-                    Integer numRows = Utils.processFile(gcodeFile);
-
-                rowsValueLabel.setText(numRows.toString());
-
-                // Reset labels
-                this.durationValueLabel.setText("00:00:00");
-                this.remainingTimeValueLabel.setText("--:--:--");
-                this.sentRowsValueLabel.setText("0");
-                this.sentRows = 0;
-                this.remainingRowsValueLabel.setText(numRows.toString());
-            } catch (FileNotFoundException ex) {
-                this.displayErrorDialog("Problem opening file: " + ex.getMessage());
-            } catch (IOException e) {
-                this.displayErrorDialog("Unknown IOException while processing file: "+e.getMessage());
-            }
-        } else {
-            // Canceled file open.
-        }
-    }//GEN-LAST:event_browseButtonActionPerformed
-
     private void lineBreakNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lineBreakNActionPerformed
         this.commPort.setLineTerminator(this.getNewline());
     }//GEN-LAST:event_lineBreakNActionPerformed
-
-    private void sendButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendButtonActionPerformed
-        ActionListener actionListener = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                java.awt.EventQueue.invokeLater(new Runnable() {
-                    @Override
-                    public void run() {
-                    long elapsedTime = Utils.millisSince(startTime);
-                    durationValueLabel.setText(Utils.formattedMillis(elapsedTime));
-                    int sent  = Integer.parseInt(sentRowsValueLabel.getText()); 
-                    int remainingRows = Integer.parseInt(remainingRowsValueLabel.getText());
-
-                    long timePerRow = elapsedTime / sent;
-                    long remainingTime = timePerRow * remainingRows;
-                    remainingTimeValueLabel.setText(Utils.formattedMillis(remainingTime));
-                    }
-                });
-                
-            }
-        };
-        
-        startTime = System.currentTimeMillis();
-        if (timer != null) timer.stop();
-        timer = new Timer(1000, actionListener);
-        timer.start();
-        
-        try {
-            // This will throw an exception and prevent that other stuff from
-            // happening (clearing the table before its ready for clearing.
-            this.commPort.isReadyToStreamFile();
-            
-            this.updateControlsForSend(true);
-            this.commPort.streamFileToComm(this.gcodeFile);
-        } catch (Exception e) {
-            timer.stop();
-            this.updateControlsForSend(false);
-            e.printStackTrace();
-            this.displayErrorDialog("Error while starting file stream: "+e.getMessage());
-        }
-    }//GEN-LAST:event_sendButtonActionPerformed
-
-    private void pauseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pauseButtonActionPerformed
-        // Note: Cannot cancel a send while paused because there are commands
-        //       in the GRBL buffer which can't be un-sent.
-        try {
-            if (this.pauseButton.getText().equalsIgnoreCase("pause")) {
-                this.commPort.pauseSend();
-                this.pauseButton.setText("Resume");
-                this.cancelButton.setEnabled(false);
-            }
-            else if (this.pauseButton.getText().equalsIgnoreCase("resume")) {
-                this.commPort.resumeSend();
-                this.pauseButton.setText("Pause");
-                this.cancelButton.setEnabled(true);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            this.displayErrorDialog("Error while trying to pause/resume");
-        }
-    }//GEN-LAST:event_pauseButtonActionPerformed
-
-    private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelButtonActionPerformed
-        this.commPort.cancelSend();
-        this.disablePauseResume();
-        
-        this.updateControlsForSend(false);
-    }//GEN-LAST:event_cancelButtonActionPerformed
 
     private void baudrateSelectionComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_baudrateSelectionComboBoxActionPerformed
     }//GEN-LAST:event_baudrateSelectionComboBoxActionPerformed
@@ -1104,75 +998,6 @@ implements SerialCommunicatorListener, KeyListener {
     private void lineBreakRNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lineBreakRNActionPerformed
         this.commPort.setLineTerminator(this.getNewline());
     }//GEN-LAST:event_lineBreakRNActionPerformed
-
-    private void xPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xPlusButtonActionPerformed
-        //this.adjustManualLocation(this.getStepSize(), 0, 0);
-        //this.sendManualCommand();
-        this.commPort.sendStringToComm("G91 X"+this.getStepSize()+"\n");
-        this.commPort.sendStringToComm("G90\n");
-
-    }//GEN-LAST:event_xPlusButtonActionPerformed
-
-    private void xMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xMinusButtonActionPerformed
-        //this.adjustManualLocation(-1 * this.getStepSize(), 0, 0);
-        //this.sendManualCommand();
-        this.commPort.sendStringToComm("G91 X"+-1 * this.getStepSize()+"\n");
-        this.commPort.sendStringToComm("G90\n");
-    }//GEN-LAST:event_xMinusButtonActionPerformed
-
-    private void yPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yPlusButtonActionPerformed
-        //this.adjustManualLocation(0, this.getStepSize(), 0);
-        //this.sendManualCommand();
-        this.commPort.sendStringToComm("G91 Y"+this.getStepSize()+"\n");
-        this.commPort.sendStringToComm("G90\n");
-    }//GEN-LAST:event_yPlusButtonActionPerformed
-
-    private void yMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yMinusButtonActionPerformed
-        //this.adjustManualLocation(0, -1 * this.getStepSize(), 0);
-        //this.sendManualCommand();
-        this.commPort.sendStringToComm("G91 Y"+-1 * this.getStepSize()+"\n");
-        this.commPort.sendStringToComm("G90\n");
-    }//GEN-LAST:event_yMinusButtonActionPerformed
-
-    private void zPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zPlusButtonActionPerformed
-        //this.adjustManualLocation(0, 0, this.getStepSize());
-        //this.sendManualCommand();
-        this.commPort.sendStringToComm("G91 Z"+this.getStepSize()+"\n");
-        this.commPort.sendStringToComm("G90\n");
-    }//GEN-LAST:event_zPlusButtonActionPerformed
-
-    private void zMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zMinusButtonActionPerformed
-        //this.adjustManualLocation(0, 0, -1 * this.getStepSize());
-        //this.sendManualCommand();
-        this.commPort.sendStringToComm("G91 Z"+-1 * this.getStepSize()+"\n");
-        this.commPort.sendStringToComm("G90\n");
-    }//GEN-LAST:event_zMinusButtonActionPerformed
-
-    private void stepSizeSpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_stepSizeSpinnerStateChanged
-    }//GEN-LAST:event_stepSizeSpinnerStateChanged
-
-    private void resetCoordinatesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetCoordinatesButtonActionPerformed
-        this.commPort.queueStringForComm(CommUtils.GCODE_RESET_COORDINATES_TO_ZERO + "\n");
-        //this.setManualLocation(0, 0, 0);
-        //this.updateManualLabels(this.manualLocation);
-    }//GEN-LAST:event_resetCoordinatesButtonActionPerformed
-
-    private void performHomingCycleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_performHomingCycleButtonActionPerformed
-        this.commPort.queueStringForComm(CommUtils.GCODE_PERFORM_HOMING_CYCLE + "\n");
-        
-        // TODO: Are these needed after the homing cycle?
-        //this.commPort.queueStringForComm(CommUtils.GCODE_RESET_COORDINATES_TO_ZERO + "\n");
-        
-        //this.setManualLocation(0, 0, 0);
-        //this.updateManualLabels(this.manualLocation);
-    }//GEN-LAST:event_performHomingCycleButtonActionPerformed
-
-    private void returnToZeroButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnToZeroButtonActionPerformed
-        this.commPort.queueStringForComm(CommUtils.GCODE_RETURN_TO_ZERO_LOCATION + "\n");
-        //this.setManualLocation(0, 0, 0);
-        //this.updateManualLabels(this.manualLocation);
-
-    }//GEN-LAST:event_returnToZeroButtonActionPerformed
 
     private void askStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_askStatusActionPerformed
         try {
@@ -1231,6 +1056,177 @@ implements SerialCommunicatorListener, KeyListener {
     private void supressCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_supressCheckBoxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_supressCheckBoxActionPerformed
+
+    private void performHomingCycleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_performHomingCycleButtonActionPerformed
+        this.commPort.queueStringForComm(CommUtils.GCODE_PERFORM_HOMING_CYCLE + "\n");
+
+        // TODO: Are these needed after the homing cycle?
+        //this.commPort.queueStringForComm(CommUtils.GCODE_RESET_COORDINATES_TO_ZERO + "\n");
+
+        //this.setManualLocation(0, 0, 0);
+        //this.updateManualLabels(this.manualLocation);
+    }//GEN-LAST:event_performHomingCycleButtonActionPerformed
+
+    private void returnToZeroButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnToZeroButtonActionPerformed
+        this.commPort.queueStringForComm(CommUtils.GCODE_RETURN_TO_ZERO_LOCATION + "\n");
+        //this.setManualLocation(0, 0, 0);
+        //this.updateManualLabels(this.manualLocation);
+    }//GEN-LAST:event_returnToZeroButtonActionPerformed
+
+    private void resetCoordinatesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetCoordinatesButtonActionPerformed
+        this.commPort.queueStringForComm(CommUtils.GCODE_RESET_COORDINATES_TO_ZERO + "\n");
+        //this.setManualLocation(0, 0, 0);
+        //this.updateManualLabels(this.manualLocation);
+    }//GEN-LAST:event_resetCoordinatesButtonActionPerformed
+
+    private void yPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yPlusButtonActionPerformed
+        //this.adjustManualLocation(0, this.getStepSize(), 0);
+        //this.sendManualCommand();
+        this.commPort.sendStringToComm("G91 Y" + this.getStepSize() + "\n");
+        this.commPort.sendStringToComm("G90\n");
+    }//GEN-LAST:event_yPlusButtonActionPerformed
+
+    private void zMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zMinusButtonActionPerformed
+        //this.adjustManualLocation(0, 0, -1 * this.getStepSize());
+        //this.sendManualCommand();
+        this.commPort.sendStringToComm("G91 Z" + -1 * this.getStepSize() + "\n");
+        this.commPort.sendStringToComm("G90\n");
+    }//GEN-LAST:event_zMinusButtonActionPerformed
+
+    private void zPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zPlusButtonActionPerformed
+        //this.adjustManualLocation(0, 0, this.getStepSize());
+        //this.sendManualCommand();
+        this.commPort.sendStringToComm("G91 Z" + this.getStepSize() + "\n");
+        this.commPort.sendStringToComm("G90\n");
+    }//GEN-LAST:event_zPlusButtonActionPerformed
+
+    private void yMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yMinusButtonActionPerformed
+        //this.adjustManualLocation(0, -1 * this.getStepSize(), 0);
+        //this.sendManualCommand();
+        this.commPort.sendStringToComm("G91 Y" + -1 * this.getStepSize() + "\n");
+        this.commPort.sendStringToComm("G90\n");
+    }//GEN-LAST:event_yMinusButtonActionPerformed
+
+    private void xMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xMinusButtonActionPerformed
+        //this.adjustManualLocation(-1 * this.getStepSize(), 0, 0);
+        //this.sendManualCommand();
+        this.commPort.sendStringToComm("G91 X" + -1 * this.getStepSize() + "\n");
+        this.commPort.sendStringToComm("G90\n");
+    }//GEN-LAST:event_xMinusButtonActionPerformed
+
+    private void xPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xPlusButtonActionPerformed
+        //this.adjustManualLocation(this.getStepSize(), 0, 0);
+        //this.sendManualCommand();
+        this.commPort.sendStringToComm("G91 X" + this.getStepSize() + "\n");
+        this.commPort.sendStringToComm("G90\n");
+    }//GEN-LAST:event_xPlusButtonActionPerformed
+
+    private void stepSizeSpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_stepSizeSpinnerStateChanged
+
+   }//GEN-LAST:event_stepSizeSpinnerStateChanged
+
+    private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelButtonActionPerformed
+        this.commPort.cancelSend();
+        this.disablePauseResume();
+
+        this.updateControlsForSend(false);
+    }//GEN-LAST:event_cancelButtonActionPerformed
+
+    private void pauseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pauseButtonActionPerformed
+        // Note: Cannot cancel a send while paused because there are commands
+        //       in the GRBL buffer which can't be un-sent.
+        try {
+            if (this.pauseButton.getText().equalsIgnoreCase("pause")) {
+                this.commPort.pauseSend();
+                this.pauseButton.setText("Resume");
+                this.cancelButton.setEnabled(false);
+            } else if (this.pauseButton.getText().equalsIgnoreCase("resume")) {
+                this.commPort.resumeSend();
+                this.pauseButton.setText("Pause");
+                this.cancelButton.setEnabled(true);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            this.displayErrorDialog("Error while trying to pause/resume");
+        }
+    }//GEN-LAST:event_pauseButtonActionPerformed
+
+    private void sendButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendButtonActionPerformed
+        ActionListener actionListener = new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                java.awt.EventQueue.invokeLater(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        long elapsedTime = Utils.millisSince(startTime);
+                        durationValueLabel.setText(Utils.formattedMillis(elapsedTime));
+                        int sent = Integer.parseInt(sentRowsValueLabel.getText());
+                        int remainingRows = Integer.parseInt(remainingRowsValueLabel.getText());
+
+                        long timePerRow = elapsedTime / sent;
+                        long remainingTime = timePerRow * remainingRows;
+                        remainingTimeValueLabel.setText(Utils.formattedMillis(remainingTime));
+                    }
+                });
+
+            }
+        };
+
+        startTime = System.currentTimeMillis();
+        if (timer != null) {
+            timer.stop();
+        }
+        timer = new Timer(1000, actionListener);
+        timer.start();
+
+        try {
+            // This will throw an exception and prevent that other stuff from
+            // happening (clearing the table before its ready for clearing.
+            this.commPort.isReadyToStreamFile();
+
+            this.updateControlsForSend(true);
+            this.commPort.streamFileToComm(this.gcodeFile);
+        } catch (Exception e) {
+            timer.stop();
+            this.updateControlsForSend(false);
+            e.printStackTrace();
+            this.displayErrorDialog("Error while starting file stream: " + e.getMessage());
+        }
+    }//GEN-LAST:event_sendButtonActionPerformed
+
+    private void browseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseButtonActionPerformed
+        int returnVal = fileChooser.showOpenDialog(this);
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            try {
+                fileTextField.setText(fileChooser.getSelectedFile().getAbsolutePath());
+                gcodeFile = fileChooser.getSelectedFile();
+                Integer numRows = Utils.processFile(gcodeFile);
+
+                rowsValueLabel.setText(numRows.toString());
+
+                // Reset labels
+                this.durationValueLabel.setText("00:00:00");
+                this.remainingTimeValueLabel.setText("--:--:--");
+                this.sentRowsValueLabel.setText("0");
+                this.sentRows = 0;
+                this.remainingRowsValueLabel.setText(numRows.toString());
+            } catch (FileNotFoundException ex) {
+                this.displayErrorDialog("Problem opening file: " + ex.getMessage());
+            } catch (IOException e) {
+                this.displayErrorDialog("Unknown IOException while processing file: " + e.getMessage());
+            }
+        } else {
+            // Canceled file open.
+        }
+    }//GEN-LAST:event_browseButtonActionPerformed
+
+    private void updateCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateCheckBoxActionPerformed
+        // TODO add your handling code here:
+        if(updateCheckBox.isSelected()) t.start();
+        else t.stop();
+    }//GEN-LAST:event_updateCheckBoxActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1305,7 +1301,7 @@ implements SerialCommunicatorListener, KeyListener {
                 @Override
                 public boolean dispatchKeyEvent(KeyEvent e) {
                     // Check context.
-                    if (((controlContextTabbedPane.getSelectedIndex() == 2) &&
+                    if ((!commandTextField.hasFocus() &&
                             e.getID() == KeyEvent.KEY_PRESSED) &&
                             xPlusButton.isEnabled()) {
                         switch (e.getKeyCode()) {
@@ -1667,7 +1663,6 @@ implements SerialCommunicatorListener, KeyListener {
     private javax.swing.JTable commandTable;
     private javax.swing.JTextField commandTextField;
     private javax.swing.JTextArea consoleTextArea;
-    private javax.swing.JTabbedPane controlContextTabbedPane;
     private javax.swing.JLabel durationLabel;
     private javax.swing.JLabel durationValueLabel;
     private javax.swing.JLabel fileLabel;
@@ -1684,10 +1679,8 @@ implements SerialCommunicatorListener, KeyListener {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
@@ -1723,6 +1716,7 @@ implements SerialCommunicatorListener, KeyListener {
     private javax.swing.JSpinner stepSizeSpinner;
     private javax.swing.JCheckBox supressCheckBox;
     private javax.swing.JButton toggleGcodCheckMode;
+    private javax.swing.JCheckBox updateCheckBox;
     private javax.swing.JLabel xLocationLabel;
     private javax.swing.JLabel xLocationLabel1;
     private javax.swing.JButton xMinusButton;
