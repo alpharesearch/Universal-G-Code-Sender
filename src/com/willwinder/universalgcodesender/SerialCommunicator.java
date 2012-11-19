@@ -338,18 +338,16 @@ public class SerialCommunicator implements SerialPortEventListener{
     
     void statusSend() throws IOException {
         this.sendMessageToConsoleListener("\n**** Asking for Status. ****\n");
-        
-        
-            this.sendByteImmediately(CommUtils.GRBL_STATUS_COMMAND);
-        
+        this.sendByteImmediately(CommUtils.GRBL_STATUS_COMMAND);
+    }
+    
+    void abortSend() throws IOException {
+        this.sendMessageToConsoleListener("\n**** Asking to Abort. ****\n");
+        this.sendByteImmediately(CommUtils.GRBL_RESET_COMMAND);
     }
     
     void parserStatusSend() throws IOException {
-        this.sendMessageToConsoleListener("\n**** Asking for Parser Status. ****\n");
-        
-        
-            this.sendStringToComm(CommUtils.GRBL_PARSER_STATE + "\n");
-        
+        this.sendQuiteStringToComm(CommUtils.GRBL_PARSER_STATE + "\n");  
     }
     
     void resumeSend() throws IOException {

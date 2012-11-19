@@ -32,7 +32,6 @@ public class Coordinate {
             this.y = Double.parseDouble(wy);
             this.z = Double.parseDouble(wz);
             s1 = true;
-            s = (s1||s2);
         }
         s2 = false;
         Pattern pattern2 = Pattern.compile("(([GMTF]\\d*) ([GMTF]\\d*) ([GMTF]\\d*) ([GMTF]\\d*) ([GMTF]\\d*) ([GMTF]\\d*) ([GMTF]\\d*) ([GMTF]\\d*) ([GMTF]\\d*) ([GMTF]\\d*) ([GMTF]\\d*\\..\\d*)())");
@@ -41,7 +40,7 @@ public class Coordinate {
             status2 = matcher2.group(0);
             s2 = true;
         }
-        
+        s = (s1||s2);
     }
     
     Double getX() {
