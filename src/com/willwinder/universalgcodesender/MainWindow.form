@@ -1077,6 +1077,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="fileTextField">
           <Properties>
+            <Property name="text" type="java.lang.String" value="/home/markus/gcode/new_test.nc"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>

@@ -17,8 +17,8 @@ import java.util.regex.Pattern;
  * @author wwinder
  */
 public class CommUtils {
-    // Note: One character of this buffer is reserved for real time commands.
-    public static final int GRBL_RX_BUFFER_SIZE= 127;
+    // Note: 8 character of this buffer are reserved for real time commands.
+    public static final int GRBL_RX_BUFFER_SIZE= 60;
     
     /**
      * Real-time commands

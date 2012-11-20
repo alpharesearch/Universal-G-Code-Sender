@@ -34,12 +34,10 @@ import javax.swing.text.DefaultCaret;
 public class MainWindow extends javax.swing.JFrame 
 implements SerialCommunicatorListener, KeyListener {
     
-    javax.swing.Timer t = new javax.swing.Timer(200, new ActionListener() {
+    javax.swing.Timer statusTimer = new javax.swing.Timer(200, new ActionListener() {
         @Override
           public void actionPerformed(ActionEvent e) {
-            commPort.sendQuiteStringToComm("?");
-            
-             
+            commPort.sendQuiteStringToComm("?");          
           }
        });
 
@@ -743,6 +741,7 @@ implements SerialCommunicatorListener, KeyListener {
             }
         });
 
+        fileTextField.setText("/home/markus/gcode/new_test.nc");
         fileTextField.setEnabled(false);
 
         fileLabel.setText("File");
@@ -924,12 +923,7 @@ implements SerialCommunicatorListener, KeyListener {
             @Override
             public void run() {
                 commPort.queueStringForComm(str + "\n");
-                try {
-                    commPort.parserStatusSend(); 
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    displayErrorDialog("Error while trying to get status");
-                }
+                askparserStatus();
             }
         });
         this.commandTextField.setText("");
@@ -982,20 +976,15 @@ implements SerialCommunicatorListener, KeyListener {
         if( this.opencloseButton.getText().equalsIgnoreCase("open") ) {
             Boolean ret = openCommConnection();
             if(updateCheckBox.isSelected()) {
-                t.start();
-            try {
-                this.commPort.parserStatusSend(); 
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    this.displayErrorDialog("Error while trying to get status");
-                }
+                statusTimer.start();
+            askparserStatus();
             }
             if (ret) {
                 // Let the command field grab focus.
                 commandTextField.grabFocus();
             }
         } else {
-           t.stop();
+           statusTimer.stop();
            closeCommConnection();
         }
     }//GEN-LAST:event_opencloseButtonActionPerformed
@@ -1029,12 +1018,7 @@ implements SerialCommunicatorListener, KeyListener {
     }//GEN-LAST:event_askStatusActionPerformed
 
     private void askParserStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_askParserStatusActionPerformed
-        try {
-        this.commPort.parserStatusSend(); 
-        } catch (Exception e) {
-            e.printStackTrace();
-            this.displayErrorDialog("Error while trying to get status");
-        }
+        askparserStatus();
     }//GEN-LAST:event_askParserStatusActionPerformed
 
     private void askParameterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_askParameterActionPerformed
@@ -1244,8 +1228,8 @@ implements SerialCommunicatorListener, KeyListener {
 
     private void updateCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateCheckBoxActionPerformed
         // TODO add your handling code here:
-        if(updateCheckBox.isSelected()) t.start();
-        else t.stop();
+        if(updateCheckBox.isSelected()) statusTimer.start();
+        else statusTimer.stop();
     }//GEN-LAST:event_updateCheckBoxActionPerformed
 
     private void abortButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_abortButtonActionPerformed
@@ -1528,6 +1512,18 @@ implements SerialCommunicatorListener, KeyListener {
         this.updateControlsForComm(false);
     }
     
+    private void askparserStatus() {
+        if(updateCheckBox.isSelected())
+        {
+            try {
+                    commPort.parserStatusSend(); 
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    displayErrorDialog("Error while trying to get status");
+                }
+        }
+    }
+    
     void clearTable() {
         while (this.tableModel.getRowCount()>0){
             this.tableModel.removeRow(0);
@@ -1563,12 +1559,7 @@ implements SerialCommunicatorListener, KeyListener {
         this.timer.stop();
         this.endTime = System.currentTimeMillis();
         remainingTimeValueLabel.setText(Utils.formattedMillis(0));
-        try {
-                commPort.parserStatusSend(); 
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    displayErrorDialog("Error while trying to get status");
-                }
+        askparserStatus();
         this.updateControlsForSend(false);
         if (success) {
             JOptionPane.showMessageDialog(new JFrame(), "Job complete after "+this.durationValueLabel.getText(), "Success", JOptionPane.INFORMATION_MESSAGE);
