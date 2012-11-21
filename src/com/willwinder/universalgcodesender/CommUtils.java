@@ -32,6 +32,7 @@ public class CommUtils {
     public static final String GRBL_CHECK_MODE = "$C";
     public static final String GRBL_KILL_LOCK = "$X";
     public static final String GRBL_HOMING = "$H";
+    public static final String GRBL_GET_SETTINGS = "$$";
     
     /**
      * Gcode Commands

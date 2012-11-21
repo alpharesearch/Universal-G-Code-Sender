@@ -63,6 +63,127 @@ implements SerialCommunicatorListener, KeyListener {
         consoleTextArea = new javax.swing.JTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
         commandTable = new javax.swing.JTable();
+        jPanel4 = new javax.swing.JPanel();
+        readSettingsButton1 = new javax.swing.JButton();
+        jPanel7 = new javax.swing.JPanel();
+        settingLabel0 = new javax.swing.JLabel();
+        settingsTextField0 = new javax.swing.JTextField();
+        settingHelpLabel0 = new javax.swing.JLabel();
+        settingLabel1 = new javax.swing.JLabel();
+        settingsTextField1 = new javax.swing.JTextField();
+        settingHelpLabel1 = new javax.swing.JLabel();
+        settingLabel2 = new javax.swing.JLabel();
+        settingsTextField2 = new javax.swing.JTextField();
+        settingHelpLabel2 = new javax.swing.JLabel();
+        settingLabel3 = new javax.swing.JLabel();
+        settingsTextField3 = new javax.swing.JTextField();
+        settingHelpLabel3 = new javax.swing.JLabel();
+        settingLabel4 = new javax.swing.JLabel();
+        settingsTextField4 = new javax.swing.JTextField();
+        settingHelpLabel4 = new javax.swing.JLabel();
+        settingLabel5 = new javax.swing.JLabel();
+        settingsTextField5 = new javax.swing.JTextField();
+        settingHelpLabel5 = new javax.swing.JLabel();
+        settingLabel6 = new javax.swing.JLabel();
+        settingsTextField6 = new javax.swing.JTextField();
+        settingHelpLabel6 = new javax.swing.JLabel();
+        settingLabel7 = new javax.swing.JLabel();
+        settingsTextField7 = new javax.swing.JTextField();
+        settingHelpLabel7 = new javax.swing.JLabel();
+        settingLabel8 = new javax.swing.JLabel();
+        settingsTextField8 = new javax.swing.JTextField();
+        settingHelpLabel8 = new javax.swing.JLabel();
+        settingLabel9 = new javax.swing.JLabel();
+        settingsTextField9 = new javax.swing.JTextField();
+        settingHelpLabel9 = new javax.swing.JLabel();
+        settingLabel10 = new javax.swing.JLabel();
+        settingsTextField10 = new javax.swing.JTextField();
+        settingHelpLabel10 = new javax.swing.JLabel();
+        settingLabel11 = new javax.swing.JLabel();
+        settingsTextField11 = new javax.swing.JTextField();
+        settingHelpLabel11 = new javax.swing.JLabel();
+        settingLabel12 = new javax.swing.JLabel();
+        settingsTextField12 = new javax.swing.JTextField();
+        settingHelpLabel12 = new javax.swing.JLabel();
+        settingLabel13 = new javax.swing.JLabel();
+        settingsTextField13 = new javax.swing.JTextField();
+        settingHelpLabel13 = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        settingLabel14 = new javax.swing.JLabel();
+        settingsTextField14 = new javax.swing.JTextField();
+        settingHelpLabel14 = new javax.swing.JLabel();
+        settingLabel15 = new javax.swing.JLabel();
+        settingsTextField15 = new javax.swing.JTextField();
+        settingHelpLabel15 = new javax.swing.JLabel();
+        settingLabel16 = new javax.swing.JLabel();
+        settingsTextField16 = new javax.swing.JTextField();
+        settingHelpLabel16 = new javax.swing.JLabel();
+        settingLabel17 = new javax.swing.JLabel();
+        settingsTextField17 = new javax.swing.JTextField();
+        settingHelpLabel17 = new javax.swing.JLabel();
+        settingLabel18 = new javax.swing.JLabel();
+        settingsTextField18 = new javax.swing.JTextField();
+        settingHelpLabel18 = new javax.swing.JLabel();
+        settingLabel19 = new javax.swing.JLabel();
+        settingsTextField19 = new javax.swing.JTextField();
+        settingHelpLabel19 = new javax.swing.JLabel();
+        settingLabel20 = new javax.swing.JLabel();
+        settingsTextField20 = new javax.swing.JTextField();
+        settingHelpLabel20 = new javax.swing.JLabel();
+        settingLabel21 = new javax.swing.JLabel();
+        settingsTextField21 = new javax.swing.JTextField();
+        settingHelpLabel21 = new javax.swing.JLabel();
+        settingLabel22 = new javax.swing.JLabel();
+        settingsTextField22 = new javax.swing.JTextField();
+        settingHelpLabel22 = new javax.swing.JLabel();
+        settingsPanel = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        askParameter = new javax.swing.JButton();
+        G5XTextField1 = new javax.swing.JTextField();
+        G5XXTextField1 = new javax.swing.JTextField();
+        G5XYTextField1 = new javax.swing.JTextField();
+        G5XZTextField1 = new javax.swing.JTextField();
+        G5XTextField2 = new javax.swing.JTextField();
+        G5XXTextField2 = new javax.swing.JTextField();
+        G5XYTextField2 = new javax.swing.JTextField();
+        G5XZTextField2 = new javax.swing.JTextField();
+        G5XTextField3 = new javax.swing.JTextField();
+        G5XXTextField3 = new javax.swing.JTextField();
+        G5XYTextField3 = new javax.swing.JTextField();
+        G5XZTextField3 = new javax.swing.JTextField();
+        G5XTextField4 = new javax.swing.JTextField();
+        G5XXTextField4 = new javax.swing.JTextField();
+        G5XYTextField4 = new javax.swing.JTextField();
+        G5XZTextField4 = new javax.swing.JTextField();
+        G5XTextField5 = new javax.swing.JTextField();
+        G5XXTextField5 = new javax.swing.JTextField();
+        G5XYTextField5 = new javax.swing.JTextField();
+        G5XZTextField5 = new javax.swing.JTextField();
+        G5XTextField6 = new javax.swing.JTextField();
+        G5XXTextField6 = new javax.swing.JTextField();
+        G5XYTextField6 = new javax.swing.JTextField();
+        G5XZTextField6 = new javax.swing.JTextField();
+        G5XTextField7 = new javax.swing.JTextField();
+        G5XXTextField7 = new javax.swing.JTextField();
+        G5XYTextField7 = new javax.swing.JTextField();
+        G5XZTextField7 = new javax.swing.JTextField();
+        G5XTextField8 = new javax.swing.JTextField();
+        G5XXTextField8 = new javax.swing.JTextField();
+        G5XYTextField8 = new javax.swing.JTextField();
+        G5XZTextField8 = new javax.swing.JTextField();
+        G5XTextField9 = new javax.swing.JTextField();
+        G5XXTextField9 = new javax.swing.JTextField();
+        G5XYTextField9 = new javax.swing.JTextField();
+        G5XZTextField9 = new javax.swing.JTextField();
+        G5XWButton1 = new javax.swing.JButton();
+        G5XWButton2 = new javax.swing.JButton();
+        G5XWButton3 = new javax.swing.JButton();
+        G5XWButton4 = new javax.swing.JButton();
+        G5XWButton5 = new javax.swing.JButton();
+        G5XWButton6 = new javax.swing.JButton();
+        G5XWButton7 = new javax.swing.JButton();
+        G5XWButton8 = new javax.swing.JButton();
+        G5XWButton9 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         commPortComboBox = new javax.swing.JComboBox();
         baudrateSelectionComboBox = new javax.swing.JComboBox();
@@ -75,7 +196,6 @@ implements SerialCommunicatorListener, KeyListener {
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        askParameter = new javax.swing.JButton();
         sendKill = new javax.swing.JButton();
         toggleGcodCheckMode = new javax.swing.JButton();
         sendHoming = new javax.swing.JButton();
@@ -181,6 +301,757 @@ implements SerialCommunicatorListener, KeyListener {
         commandTable.getColumnModel().getColumn(3).setPreferredWidth(350);
 
         jTabbedPane2.addTab("Command Table", jScrollPane1);
+
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("System"));
+
+        readSettingsButton1.setText("read settings ($$)");
+        readSettingsButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                readSettingsButton1ActionPerformed(evt);
+            }
+        });
+
+        settingLabel0.setText("$XX");
+
+        settingsTextField0.setText("000.000");
+
+        settingHelpLabel0.setText("Help text form Grbl.");
+
+        settingLabel1.setText("$XX");
+
+        settingsTextField1.setText("000.000");
+
+        settingHelpLabel1.setText("Help text form Grbl.");
+
+        settingLabel2.setText("$XX");
+
+        settingsTextField2.setText("000.000");
+
+        settingHelpLabel2.setText("Help text form Grbl.");
+
+        settingLabel3.setText("$XX");
+
+        settingsTextField3.setText("000.000");
+
+        settingHelpLabel3.setText("Help text form Grbl.");
+
+        settingLabel4.setText("$XX");
+
+        settingsTextField4.setText("000.000");
+
+        settingHelpLabel4.setText("Help text form Grbl.");
+
+        settingLabel5.setText("$XX");
+
+        settingsTextField5.setText("000.000");
+
+        settingHelpLabel5.setText("Help text form Grbl.");
+
+        settingLabel6.setText("$XX");
+
+        settingsTextField6.setText("000.000");
+
+        settingHelpLabel6.setText("Help text form Grbl.");
+
+        settingLabel7.setText("$XX");
+
+        settingsTextField7.setText("000.000");
+
+        settingHelpLabel7.setText("Help text form Grbl.");
+
+        settingLabel8.setText("$XX");
+
+        settingsTextField8.setText("000.000");
+
+        settingHelpLabel8.setText("Help text form Grbl.");
+
+        settingLabel9.setText("$XX");
+
+        settingsTextField9.setText("000.000");
+
+        settingHelpLabel9.setText("Help text form Grbl.");
+
+        settingLabel10.setText("$XX");
+
+        settingsTextField10.setText("000.000");
+
+        settingHelpLabel10.setText("Help text form Grbl.");
+
+        settingLabel11.setText("$XX");
+
+        settingsTextField11.setText("000.000");
+
+        settingHelpLabel11.setText("Help text form Grbl.");
+
+        settingLabel12.setText("$XX");
+
+        settingsTextField12.setText("000.000");
+
+        settingHelpLabel12.setText("Help text form Grbl.");
+
+        settingLabel13.setText("$XX");
+
+        settingsTextField13.setText("000.000");
+
+        settingHelpLabel13.setText("Help text form Grbl.");
+
+        org.jdesktop.layout.GroupLayout jPanel7Layout = new org.jdesktop.layout.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel13)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField13))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel12)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField12))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel11)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField11))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel10)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField10))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel9)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField9))
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel8)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField8))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel7)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField7))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel6)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField6))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel5)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField5))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel4)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField4))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel3)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField3))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel2)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField2))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField1))
+                    .add(jPanel7Layout.createSequentialGroup()
+                        .add(settingLabel0)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField0, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 69, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(settingHelpLabel1)
+                    .add(settingHelpLabel2)
+                    .add(settingHelpLabel3)
+                    .add(settingHelpLabel4)
+                    .add(settingHelpLabel6)
+                    .add(settingHelpLabel7)
+                    .add(settingHelpLabel8)
+                    .add(settingHelpLabel9)
+                    .add(settingHelpLabel10)
+                    .add(settingHelpLabel11)
+                    .add(settingHelpLabel12)
+                    .add(settingHelpLabel13)
+                    .add(settingHelpLabel5)
+                    .add(settingHelpLabel0))
+                .addContainerGap(68, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel0)
+                    .add(settingsTextField0, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel0))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel1)
+                    .add(settingsTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel1))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel2)
+                    .add(settingsTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel2))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel3)
+                    .add(settingsTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel3))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel4)
+                    .add(settingsTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel4))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel5)
+                    .add(settingsTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel5))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel6)
+                    .add(settingsTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel6))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel7)
+                    .add(settingsTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel7))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel8)
+                    .add(settingsTextField8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel8))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel9)
+                    .add(settingsTextField9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel9))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel10)
+                    .add(settingsTextField10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel10))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel11)
+                    .add(settingsTextField11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel11))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel12)
+                    .add(settingsTextField12, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel12))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel7Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel13)
+                    .add(settingsTextField13, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel13))
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+
+        settingLabel14.setText("$XX");
+
+        settingsTextField14.setText("000.000");
+
+        settingHelpLabel14.setText("Help text form Grbl.");
+
+        settingLabel15.setText("$XX");
+
+        settingsTextField15.setText("000.000");
+
+        settingHelpLabel15.setText("Help text form Grbl.");
+
+        settingLabel16.setText("$XX");
+
+        settingsTextField16.setText("000.000");
+
+        settingHelpLabel16.setText("Help text form Grbl.");
+
+        settingLabel17.setText("$XX");
+
+        settingsTextField17.setText("000.000");
+
+        settingHelpLabel17.setText("Help text form Grbl.");
+
+        settingLabel18.setText("$XX");
+
+        settingsTextField18.setText("000.000");
+
+        settingHelpLabel18.setText("Help text form Grbl.");
+
+        settingLabel19.setText("$XX");
+
+        settingsTextField19.setText("000.000");
+
+        settingHelpLabel19.setText("Help text form Grbl.");
+
+        settingLabel20.setText("$XX");
+
+        settingsTextField20.setText("000.000");
+
+        settingHelpLabel20.setText("Help text form Grbl.");
+
+        settingLabel21.setText("$XX");
+
+        settingsTextField21.setText("000.000");
+
+        settingHelpLabel21.setText("Help text form Grbl.");
+
+        settingLabel22.setText("$XX");
+
+        settingsTextField22.setText("000.000");
+
+        settingHelpLabel22.setText("Help text form Grbl.");
+
+        org.jdesktop.layout.GroupLayout jPanel8Layout = new org.jdesktop.layout.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                    .add(jPanel8Layout.createSequentialGroup()
+                        .add(settingLabel22)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField22))
+                    .add(jPanel8Layout.createSequentialGroup()
+                        .add(settingLabel21)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField21))
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .add(settingLabel20)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField20))
+                    .add(jPanel8Layout.createSequentialGroup()
+                        .add(settingLabel19)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField19))
+                    .add(jPanel8Layout.createSequentialGroup()
+                        .add(settingLabel18)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField18))
+                    .add(jPanel8Layout.createSequentialGroup()
+                        .add(settingLabel17)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField17))
+                    .add(jPanel8Layout.createSequentialGroup()
+                        .add(settingLabel16)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField16))
+                    .add(jPanel8Layout.createSequentialGroup()
+                        .add(settingLabel15)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField15))
+                    .add(jPanel8Layout.createSequentialGroup()
+                        .add(settingLabel14)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(settingsTextField14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 68, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(settingHelpLabel14)
+                    .add(settingHelpLabel15)
+                    .add(settingHelpLabel16)
+                    .add(settingHelpLabel17)
+                    .add(settingHelpLabel18)
+                    .add(settingHelpLabel19)
+                    .add(settingHelpLabel20)
+                    .add(settingHelpLabel21)
+                    .add(settingHelpLabel22))
+                .add(0, 126, Short.MAX_VALUE))
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel8Layout.createSequentialGroup()
+                .add(50, 50, 50)
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel14)
+                    .add(settingsTextField14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel14))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel15)
+                    .add(settingsTextField15, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel15))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel16)
+                    .add(settingsTextField16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel16))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel17)
+                    .add(settingsTextField17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel17))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel18)
+                    .add(settingsTextField18, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel18))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel19)
+                    .add(settingsTextField19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel19))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel20)
+                    .add(settingsTextField20, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel20))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel21)
+                    .add(settingsTextField21, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel21))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel8Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(settingLabel22)
+                    .add(settingsTextField22, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(settingHelpLabel22))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        org.jdesktop.layout.GroupLayout jPanel4Layout = new org.jdesktop.layout.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(readSettingsButton1)
+                    .add(jPanel7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(jPanel8, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel4Layout.createSequentialGroup()
+                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jPanel4Layout.createSequentialGroup()
+                        .add(readSettingsButton1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                        .add(jPanel7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .add(jPanel8, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        jTabbedPane2.addTab("Grbl Settings", jPanel4);
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Position"));
+
+        askParameter.setText("read parameters ($#)");
+        askParameter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                askParameterActionPerformed(evt);
+            }
+        });
+
+        G5XTextField1.setText("G5X");
+        G5XTextField1.setEnabled(false);
+
+        G5XXTextField1.setText("000.000");
+
+        G5XYTextField1.setText("000.000");
+
+        G5XZTextField1.setText("000.000");
+
+        G5XTextField2.setText("G5X");
+        G5XTextField2.setEnabled(false);
+
+        G5XXTextField2.setText("000.000");
+
+        G5XYTextField2.setText("000.000");
+
+        G5XZTextField2.setText("000.000");
+
+        G5XTextField3.setText("G5X");
+        G5XTextField3.setEnabled(false);
+
+        G5XXTextField3.setText("000.000");
+
+        G5XYTextField3.setText("000.000");
+
+        G5XZTextField3.setText("000.000");
+
+        G5XTextField4.setText("G5X");
+        G5XTextField4.setEnabled(false);
+
+        G5XXTextField4.setText("000.000");
+
+        G5XYTextField4.setText("000.000");
+
+        G5XZTextField4.setText("000.000");
+
+        G5XTextField5.setText("G5X");
+        G5XTextField5.setEnabled(false);
+
+        G5XXTextField5.setText("000.000");
+
+        G5XYTextField5.setText("000.000");
+
+        G5XZTextField5.setText("000.000");
+
+        G5XTextField6.setText("G5X");
+        G5XTextField6.setEnabled(false);
+
+        G5XXTextField6.setText("000.000");
+
+        G5XYTextField6.setText("000.000");
+
+        G5XZTextField6.setText("000.000");
+
+        G5XTextField7.setText("G5X");
+        G5XTextField7.setEnabled(false);
+
+        G5XXTextField7.setText("000.000");
+
+        G5XYTextField7.setText("000.000");
+
+        G5XZTextField7.setText("000.000");
+
+        G5XTextField8.setText("G5X");
+        G5XTextField8.setEnabled(false);
+
+        G5XXTextField8.setText("000.000");
+
+        G5XYTextField8.setText("000.000");
+
+        G5XZTextField8.setText("000.000");
+
+        G5XTextField9.setText("G5X");
+        G5XTextField9.setEnabled(false);
+
+        G5XXTextField9.setText("000.000");
+
+        G5XYTextField9.setText("000.000");
+
+        G5XZTextField9.setText("000.000");
+
+        G5XWButton1.setText("write");
+        G5XWButton1.setEnabled(false);
+        G5XWButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                G5XWButton1ActionPerformed(evt);
+            }
+        });
+
+        G5XWButton2.setText("write");
+        G5XWButton2.setEnabled(false);
+
+        G5XWButton3.setText("write");
+        G5XWButton3.setEnabled(false);
+
+        G5XWButton4.setText("write");
+        G5XWButton4.setEnabled(false);
+
+        G5XWButton5.setText("write");
+        G5XWButton5.setEnabled(false);
+
+        G5XWButton6.setText("write");
+        G5XWButton6.setEnabled(false);
+
+        G5XWButton7.setText("write");
+        G5XWButton7.setEnabled(false);
+
+        G5XWButton8.setText("write");
+        G5XWButton8.setEnabled(false);
+
+        G5XWButton9.setText("write");
+        G5XWButton9.setEnabled(false);
+
+        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                            .add(G5XTextField3)
+                            .add(G5XTextField2)
+                            .add(G5XTextField1))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(jPanel1Layout.createSequentialGroup()
+                                .add(G5XXTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                                .add(G5XYTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(17, 17, 17)
+                                .add(G5XZTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .add(G5XWButton1))
+                            .add(jPanel1Layout.createSequentialGroup()
+                                .add(G5XXTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                                .add(G5XYTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(17, 17, 17)
+                                .add(G5XZTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .add(G5XWButton3))
+                            .add(jPanel1Layout.createSequentialGroup()
+                                .add(G5XXTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                                .add(G5XYTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(17, 17, 17)
+                                .add(G5XZTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .add(G5XWButton2))))
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                            .add(G5XTextField4)
+                            .add(G5XTextField9)
+                            .add(G5XTextField8)
+                            .add(G5XTextField7)
+                            .add(G5XTextField6)
+                            .add(G5XTextField5))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(jPanel1Layout.createSequentialGroup()
+                                .add(G5XXTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                                .add(G5XYTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(17, 17, 17)
+                                .add(G5XZTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .add(G5XWButton4))
+                            .add(jPanel1Layout.createSequentialGroup()
+                                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(jPanel1Layout.createSequentialGroup()
+                                        .add(G5XXTextField9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .add(11, 11, 11)
+                                        .add(G5XYTextField9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .add(18, 18, 18)
+                                        .add(G5XZTextField9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .add(jPanel1Layout.createSequentialGroup()
+                                        .add(G5XXTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                                        .add(G5XYTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .add(17, 17, 17)
+                                        .add(G5XZTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .add(jPanel1Layout.createSequentialGroup()
+                                        .add(G5XXTextField8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                                        .add(G5XYTextField8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .add(17, 17, 17)
+                                        .add(G5XZTextField8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .add(jPanel1Layout.createSequentialGroup()
+                                        .add(G5XXTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                                        .add(G5XYTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .add(17, 17, 17)
+                                        .add(G5XZTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .add(jPanel1Layout.createSequentialGroup()
+                                        .add(G5XXTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .add(11, 11, 11)
+                                        .add(G5XYTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .add(18, 18, 18)
+                                        .add(G5XZTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, G5XWButton5)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, G5XWButton6)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, G5XWButton7)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, G5XWButton8)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, G5XWButton9)))))
+                    .add(askParameter))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel1Layout.createSequentialGroup()
+                .add(askParameter)
+                .add(18, 18, 18)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(G5XTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XXTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XYTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XZTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XWButton1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(G5XTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XXTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XYTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XZTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XWButton2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(G5XTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XXTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XYTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XZTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XWButton3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(G5XTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XXTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XYTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XZTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XWButton4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(G5XTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XXTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XYTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XZTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XWButton5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(G5XTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XXTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XYTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XZTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XWButton6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(G5XTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XXTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XYTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XZTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XWButton7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(G5XTextField8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XXTextField8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XYTextField8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XZTextField8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XWButton8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(G5XTextField9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XXTextField9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XYTextField9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XZTextField9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(G5XWButton9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(0, 149, Short.MAX_VALUE))
+        );
+
+        org.jdesktop.layout.GroupLayout settingsPanelLayout = new org.jdesktop.layout.GroupLayout(settingsPanel);
+        settingsPanel.setLayout(settingsPanelLayout);
+        settingsPanelLayout.setHorizontalGroup(
+            settingsPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(settingsPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(423, Short.MAX_VALUE))
+        );
+        settingsPanelLayout.setVerticalGroup(
+            settingsPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, settingsPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jTabbedPane2.addTab("Grbl Parameters", settingsPanel);
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Connection"));
         jPanel3.setMaximumSize(new java.awt.Dimension(325, 125));
@@ -294,13 +1165,6 @@ implements SerialCommunicatorListener, KeyListener {
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Control"));
         jPanel5.setName("Control");
-
-        askParameter.setText("$#");
-        askParameter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                askParameterActionPerformed(evt);
-            }
-        });
 
         sendKill.setText("$X");
         sendKill.addActionListener(new java.awt.event.ActionListener() {
@@ -517,10 +1381,14 @@ implements SerialCommunicatorListener, KeyListener {
                                     .add(jLabel10))
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                                 .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(xLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .add(zLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .add(yLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .add(56, 56, 56))
+                                    .add(jPanel6Layout.createSequentialGroup()
+                                        .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                            .add(xLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .add(yLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .add(56, 56, 56))
+                                    .add(jPanel6Layout.createSequentialGroup()
+                                        .add(zLocationLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .add(147, 147, 147))))
                             .add(jPanel6Layout.createSequentialGroup()
                                 .add(jLabel9)
                                 .addContainerGap(58, Short.MAX_VALUE))))
@@ -646,9 +1514,7 @@ implements SerialCommunicatorListener, KeyListener {
                             .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                                 .add(jPanel5Layout.createSequentialGroup()
                                     .add(returnToZeroButton)
-                                    .add(12, 12, 12)
-                                    .add(askParameter)
-                                    .add(18, 18, 18)
+                                    .add(82, 82, 82)
                                     .add(toggleGcodCheckMode))
                                 .add(jPanel5Layout.createSequentialGroup()
                                     .add(scrollWindowCheckBox)
@@ -694,8 +1560,7 @@ implements SerialCommunicatorListener, KeyListener {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                 .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(returnToZeroButton)
-                    .add(toggleGcodCheckMode)
-                    .add(askParameter))
+                    .add(toggleGcodCheckMode))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                 .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(performHomingCycleButton)
@@ -741,7 +1606,6 @@ implements SerialCommunicatorListener, KeyListener {
             }
         });
 
-        fileTextField.setText("/home/markus/gcode/new_test.nc");
         fileTextField.setEnabled(false);
 
         fileLabel.setText("File");
@@ -819,7 +1683,7 @@ implements SerialCommunicatorListener, KeyListener {
                                 .add(remainingRowsLabel)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                                 .add(remainingRowsValueLabel)))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 265, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel2Layout.createSequentialGroup()
                                 .add(remainingTimeLabel)
@@ -900,7 +1764,7 @@ implements SerialCommunicatorListener, KeyListener {
                             .add(commandLabel)
                             .add(commandTextField)))
                     .add(layout.createSequentialGroup()
-                        .add(jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .add(jPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jTabbedPane2)))
                 .addContainerGap())
@@ -1021,15 +1885,6 @@ implements SerialCommunicatorListener, KeyListener {
         askparserStatus();
     }//GEN-LAST:event_askParserStatusActionPerformed
 
-    private void askParameterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_askParameterActionPerformed
-                try {
-        this.commPort.sendStringToComm(CommUtils.GRBL_PARAMETERS + "\n");
-        } catch (Exception e) {
-            e.printStackTrace();
-            this.displayErrorDialog("Error while trying to get status");
-        }
-    }//GEN-LAST:event_askParameterActionPerformed
-
     private void toggleGcodCheckModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleGcodCheckModeActionPerformed
                 try {
         this.commPort.sendStringToComm(CommUtils.GRBL_CHECK_MODE + "\n");
@@ -1049,8 +1904,8 @@ implements SerialCommunicatorListener, KeyListener {
     }//GEN-LAST:event_sendKillActionPerformed
 
     private void sendHomingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendHomingActionPerformed
-                try {
-        this.commPort.sendStringToComm(CommUtils.GRBL_HOMING + "\n");
+        try {
+            this.commPort.sendStringToComm(CommUtils.GRBL_HOMING + "\n");
         } catch (Exception e) {
             e.printStackTrace();
             this.displayErrorDialog("Error while trying to get status");
@@ -1241,6 +2096,38 @@ implements SerialCommunicatorListener, KeyListener {
         }        
     }//GEN-LAST:event_abortButtonActionPerformed
 
+    private void G5XWButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G5XWButton1ActionPerformed
+        messageForConsole("Setting G54:\n");
+        this.displayErrorDialog("Not implemented yet! \n");
+    }//GEN-LAST:event_G5XWButton1ActionPerformed
+
+    private void askParameterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_askParameterActionPerformed
+        try {
+            this.commPort.sendStringToComm(CommUtils.GRBL_PARAMETERS + "\n");
+        } catch (Exception e) {
+            e.printStackTrace();
+            this.displayErrorDialog("Error while trying to get status");
+        }
+        G5XWButton1.setEnabled(true);
+        G5XWButton2.setEnabled(true);
+        G5XWButton3.setEnabled(true);
+        G5XWButton4.setEnabled(true);
+        G5XWButton5.setEnabled(true);
+        G5XWButton6.setEnabled(true);
+        G5XWButton7.setEnabled(true);
+        G5XWButton8.setEnabled(true);
+        G5XWButton9.setEnabled(true);
+    }//GEN-LAST:event_askParameterActionPerformed
+
+    private void readSettingsButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readSettingsButton1ActionPerformed
+        try {
+            this.commPort.sendStringToComm(CommUtils.GRBL_GET_SETTINGS + "\n");
+        } catch (Exception e) {
+            e.printStackTrace();
+            this.displayErrorDialog("Error while trying to get status");
+        }
+    }//GEN-LAST:event_readSettingsButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1399,6 +2286,181 @@ implements SerialCommunicatorListener, KeyListener {
 
             this.LabelStatus2.setText(coords.status2);
         }
+        
+        if(coords.s3){
+            if(coords.G5X.contentEquals("G54")){
+                this.G5XTextField1.setText(coords.G5X);
+                this.G5XXTextField1.setText(coords.G5X_x);
+                this.G5XYTextField1.setText(coords.G5X_y);
+                this.G5XZTextField1.setText(coords.G5X_z);
+            }
+            if(coords.G5X.contentEquals("G55")){
+                this.G5XTextField2.setText(coords.G5X);
+                this.G5XXTextField2.setText(coords.G5X_x);
+                this.G5XYTextField2.setText(coords.G5X_y);
+                this.G5XZTextField2.setText(coords.G5X_z);
+            }
+            if(coords.G5X.contentEquals("G56")){
+                this.G5XTextField3.setText(coords.G5X);
+                this.G5XXTextField3.setText(coords.G5X_x);
+                this.G5XYTextField3.setText(coords.G5X_y);
+                this.G5XZTextField3.setText(coords.G5X_z);
+            }
+            if(coords.G5X.contentEquals("G57")){
+                this.G5XTextField4.setText(coords.G5X);
+                this.G5XXTextField4.setText(coords.G5X_x);
+                this.G5XYTextField4.setText(coords.G5X_y);
+                this.G5XZTextField4.setText(coords.G5X_z);
+            }
+            if(coords.G5X.contentEquals("G58")){
+                this.G5XTextField5.setText(coords.G5X);
+                this.G5XXTextField5.setText(coords.G5X_x);
+                this.G5XYTextField5.setText(coords.G5X_y);
+                this.G5XZTextField5.setText(coords.G5X_z);
+            }
+            if(coords.G5X.contentEquals("G59")){
+                this.G5XTextField6.setText(coords.G5X);
+                this.G5XXTextField6.setText(coords.G5X_x);
+                this.G5XYTextField6.setText(coords.G5X_y);
+                this.G5XZTextField6.setText(coords.G5X_z);
+            }
+            if(coords.G5X.contentEquals("G28")){
+                this.G5XTextField7.setText(coords.G5X);
+                this.G5XXTextField7.setText(coords.G5X_x);
+                this.G5XYTextField7.setText(coords.G5X_y);
+                this.G5XZTextField7.setText(coords.G5X_z);
+            }
+            if(coords.G5X.contentEquals("G30")){
+                this.G5XTextField8.setText(coords.G5X);
+                this.G5XXTextField8.setText(coords.G5X_x);
+                this.G5XYTextField8.setText(coords.G5X_y);
+                this.G5XZTextField8.setText(coords.G5X_z);
+            }
+            if(coords.G5X.contentEquals("G92")){
+                this.G5XTextField9.setText(coords.G5X);
+                this.G5XXTextField9.setText(coords.G5X_x);
+                this.G5XYTextField9.setText(coords.G5X_y);
+                this.G5XZTextField9.setText(coords.G5X_z);
+            }
+        }
+        
+        if(coords.s4){
+            if(coords.settingNumber.contentEquals("$0")){
+                this.settingLabel0.setText(coords.settingNumber);
+                this.settingsTextField0.setText(coords.settingValue);
+                this.settingHelpLabel0.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$1")){
+                this.settingLabel1.setText(coords.settingNumber);
+                this.settingsTextField1.setText(coords.settingValue);
+                this.settingHelpLabel1.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$2")){
+                this.settingLabel2.setText(coords.settingNumber);
+                this.settingsTextField2.setText(coords.settingValue);
+                this.settingHelpLabel2.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$3")){
+                this.settingLabel3.setText(coords.settingNumber);
+                this.settingsTextField3.setText(coords.settingValue);
+                this.settingHelpLabel3.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$4")){
+                this.settingLabel4.setText(coords.settingNumber);
+                this.settingsTextField4.setText(coords.settingValue);
+                this.settingHelpLabel4.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$5")){
+                this.settingLabel5.setText(coords.settingNumber);
+                this.settingsTextField5.setText(coords.settingValue);
+                this.settingHelpLabel5.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$6")){
+                this.settingLabel6.setText(coords.settingNumber);
+                this.settingsTextField6.setText(coords.settingValue);
+                this.settingHelpLabel6.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$7")){
+                this.settingLabel7.setText(coords.settingNumber);
+                this.settingsTextField7.setText(coords.settingValue);
+                this.settingHelpLabel7.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$8")){
+                this.settingLabel8.setText(coords.settingNumber);
+                this.settingsTextField8.setText(coords.settingValue);
+                this.settingHelpLabel8.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$9")){
+                this.settingLabel9.setText(coords.settingNumber);
+                this.settingsTextField9.setText(coords.settingValue);
+                this.settingHelpLabel9.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$10")){
+                this.settingLabel10.setText(coords.settingNumber);
+                this.settingsTextField10.setText(coords.settingValue);
+                this.settingHelpLabel10.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$11")){
+                this.settingLabel11.setText(coords.settingNumber);
+                this.settingsTextField11.setText(coords.settingValue);
+                this.settingHelpLabel11.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$12")){
+                this.settingLabel12.setText(coords.settingNumber);
+                this.settingsTextField12.setText(coords.settingValue);
+                this.settingHelpLabel12.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$13")){
+                this.settingLabel13.setText(coords.settingNumber);
+                this.settingsTextField13.setText(coords.settingValue);
+                this.settingHelpLabel13.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$14")){
+                this.settingLabel14.setText(coords.settingNumber);
+                this.settingsTextField14.setText(coords.settingValue);
+                this.settingHelpLabel14.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$15")){
+                this.settingLabel15.setText(coords.settingNumber);
+                this.settingsTextField15.setText(coords.settingValue);
+                this.settingHelpLabel15.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$16")){
+                this.settingLabel16.setText(coords.settingNumber);
+                this.settingsTextField16.setText(coords.settingValue);
+                this.settingHelpLabel16.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$17")){
+                this.settingLabel17.setText(coords.settingNumber);
+                this.settingsTextField17.setText(coords.settingValue);
+                this.settingHelpLabel17.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$18")){
+                this.settingLabel18.setText(coords.settingNumber);
+                this.settingsTextField18.setText(coords.settingValue);
+                this.settingHelpLabel18.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$19")){
+                this.settingLabel19.setText(coords.settingNumber);
+                this.settingsTextField19.setText(coords.settingValue);
+                this.settingHelpLabel19.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$20")){
+                this.settingLabel20.setText(coords.settingNumber);
+                this.settingsTextField20.setText(coords.settingValue);
+                this.settingHelpLabel20.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$21")){
+                this.settingLabel21.setText(coords.settingNumber);
+                this.settingsTextField21.setText(coords.settingValue);
+                this.settingHelpLabel21.setText(coords.settingText);
+            }
+            if(coords.settingNumber.contentEquals("$22")){
+                this.settingLabel22.setText(coords.settingNumber);
+                this.settingsTextField22.setText(coords.settingValue);
+                this.settingHelpLabel22.setText(coords.settingText);
+            }
+        }
     }
     
     private void updateManualControls(boolean enabled) {
@@ -1515,8 +2577,8 @@ implements SerialCommunicatorListener, KeyListener {
     private void askparserStatus() {
         if(updateCheckBox.isSelected())
         {
-            try {
-                    commPort.parserStatusSend(); 
+        try {
+                commPort.parserStatusSend(); 
                 } catch (Exception e) {
                     e.printStackTrace();
                     displayErrorDialog("Error while trying to get status");
@@ -1654,7 +2716,7 @@ implements SerialCommunicatorListener, KeyListener {
     public void messageForDisplay(Coordinate coords) {
         updateManualLabels(coords);
         if(coords.s&&!supressCheckBox.isSelected())
-            messageForConsole(coords.message);
+            messageForConsole(coords.message+"\n");
     }
     
     // My Variables
@@ -1675,6 +2737,51 @@ implements SerialCommunicatorListener, KeyListener {
     
     // Generated variables.
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField G5XTextField1;
+    private javax.swing.JTextField G5XTextField2;
+    private javax.swing.JTextField G5XTextField3;
+    private javax.swing.JTextField G5XTextField4;
+    private javax.swing.JTextField G5XTextField5;
+    private javax.swing.JTextField G5XTextField6;
+    private javax.swing.JTextField G5XTextField7;
+    private javax.swing.JTextField G5XTextField8;
+    private javax.swing.JTextField G5XTextField9;
+    private javax.swing.JButton G5XWButton1;
+    private javax.swing.JButton G5XWButton2;
+    private javax.swing.JButton G5XWButton3;
+    private javax.swing.JButton G5XWButton4;
+    private javax.swing.JButton G5XWButton5;
+    private javax.swing.JButton G5XWButton6;
+    private javax.swing.JButton G5XWButton7;
+    private javax.swing.JButton G5XWButton8;
+    private javax.swing.JButton G5XWButton9;
+    private javax.swing.JTextField G5XXTextField1;
+    private javax.swing.JTextField G5XXTextField2;
+    private javax.swing.JTextField G5XXTextField3;
+    private javax.swing.JTextField G5XXTextField4;
+    private javax.swing.JTextField G5XXTextField5;
+    private javax.swing.JTextField G5XXTextField6;
+    private javax.swing.JTextField G5XXTextField7;
+    private javax.swing.JTextField G5XXTextField8;
+    private javax.swing.JTextField G5XXTextField9;
+    private javax.swing.JTextField G5XYTextField1;
+    private javax.swing.JTextField G5XYTextField2;
+    private javax.swing.JTextField G5XYTextField3;
+    private javax.swing.JTextField G5XYTextField4;
+    private javax.swing.JTextField G5XYTextField5;
+    private javax.swing.JTextField G5XYTextField6;
+    private javax.swing.JTextField G5XYTextField7;
+    private javax.swing.JTextField G5XYTextField8;
+    private javax.swing.JTextField G5XYTextField9;
+    private javax.swing.JTextField G5XZTextField1;
+    private javax.swing.JTextField G5XZTextField2;
+    private javax.swing.JTextField G5XZTextField3;
+    private javax.swing.JTextField G5XZTextField4;
+    private javax.swing.JTextField G5XZTextField5;
+    private javax.swing.JTextField G5XZTextField6;
+    private javax.swing.JTextField G5XZTextField7;
+    private javax.swing.JTextField G5XZTextField8;
+    private javax.swing.JTextField G5XZTextField9;
     private javax.swing.JLabel LabelStatus1;
     private javax.swing.JLabel LabelStatus2;
     private javax.swing.JButton abortButton;
@@ -1705,10 +2812,14 @@ implements SerialCommunicatorListener, KeyListener {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane1;
@@ -1723,6 +2834,7 @@ implements SerialCommunicatorListener, KeyListener {
     private javax.swing.JSpinner overrideSpeedValueSpinner;
     private javax.swing.JButton pauseButton;
     private javax.swing.JButton performHomingCycleButton;
+    private javax.swing.JButton readSettingsButton1;
     private javax.swing.JButton refreshButton;
     private javax.swing.JLabel remainingRowsLabel;
     private javax.swing.JLabel remainingRowsValueLabel;
@@ -1738,6 +2850,76 @@ implements SerialCommunicatorListener, KeyListener {
     private javax.swing.JButton sendKill;
     private javax.swing.JLabel sentRowsLabel;
     private javax.swing.JLabel sentRowsValueLabel;
+    private javax.swing.JLabel settingHelpLabel0;
+    private javax.swing.JLabel settingHelpLabel1;
+    private javax.swing.JLabel settingHelpLabel10;
+    private javax.swing.JLabel settingHelpLabel11;
+    private javax.swing.JLabel settingHelpLabel12;
+    private javax.swing.JLabel settingHelpLabel13;
+    private javax.swing.JLabel settingHelpLabel14;
+    private javax.swing.JLabel settingHelpLabel15;
+    private javax.swing.JLabel settingHelpLabel16;
+    private javax.swing.JLabel settingHelpLabel17;
+    private javax.swing.JLabel settingHelpLabel18;
+    private javax.swing.JLabel settingHelpLabel19;
+    private javax.swing.JLabel settingHelpLabel2;
+    private javax.swing.JLabel settingHelpLabel20;
+    private javax.swing.JLabel settingHelpLabel21;
+    private javax.swing.JLabel settingHelpLabel22;
+    private javax.swing.JLabel settingHelpLabel3;
+    private javax.swing.JLabel settingHelpLabel4;
+    private javax.swing.JLabel settingHelpLabel5;
+    private javax.swing.JLabel settingHelpLabel6;
+    private javax.swing.JLabel settingHelpLabel7;
+    private javax.swing.JLabel settingHelpLabel8;
+    private javax.swing.JLabel settingHelpLabel9;
+    private javax.swing.JLabel settingLabel0;
+    private javax.swing.JLabel settingLabel1;
+    private javax.swing.JLabel settingLabel10;
+    private javax.swing.JLabel settingLabel11;
+    private javax.swing.JLabel settingLabel12;
+    private javax.swing.JLabel settingLabel13;
+    private javax.swing.JLabel settingLabel14;
+    private javax.swing.JLabel settingLabel15;
+    private javax.swing.JLabel settingLabel16;
+    private javax.swing.JLabel settingLabel17;
+    private javax.swing.JLabel settingLabel18;
+    private javax.swing.JLabel settingLabel19;
+    private javax.swing.JLabel settingLabel2;
+    private javax.swing.JLabel settingLabel20;
+    private javax.swing.JLabel settingLabel21;
+    private javax.swing.JLabel settingLabel22;
+    private javax.swing.JLabel settingLabel3;
+    private javax.swing.JLabel settingLabel4;
+    private javax.swing.JLabel settingLabel5;
+    private javax.swing.JLabel settingLabel6;
+    private javax.swing.JLabel settingLabel7;
+    private javax.swing.JLabel settingLabel8;
+    private javax.swing.JLabel settingLabel9;
+    private javax.swing.JPanel settingsPanel;
+    private javax.swing.JTextField settingsTextField0;
+    private javax.swing.JTextField settingsTextField1;
+    private javax.swing.JTextField settingsTextField10;
+    private javax.swing.JTextField settingsTextField11;
+    private javax.swing.JTextField settingsTextField12;
+    private javax.swing.JTextField settingsTextField13;
+    private javax.swing.JTextField settingsTextField14;
+    private javax.swing.JTextField settingsTextField15;
+    private javax.swing.JTextField settingsTextField16;
+    private javax.swing.JTextField settingsTextField17;
+    private javax.swing.JTextField settingsTextField18;
+    private javax.swing.JTextField settingsTextField19;
+    private javax.swing.JTextField settingsTextField2;
+    private javax.swing.JTextField settingsTextField20;
+    private javax.swing.JTextField settingsTextField21;
+    private javax.swing.JTextField settingsTextField22;
+    private javax.swing.JTextField settingsTextField3;
+    private javax.swing.JTextField settingsTextField4;
+    private javax.swing.JTextField settingsTextField5;
+    private javax.swing.JTextField settingsTextField6;
+    private javax.swing.JTextField settingsTextField7;
+    private javax.swing.JTextField settingsTextField8;
+    private javax.swing.JTextField settingsTextField9;
     private javax.swing.JLabel stepSizeLabel;
     private javax.swing.JSpinner stepSizeSpinner;
     private javax.swing.JCheckBox supressCheckBox;
