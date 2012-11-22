@@ -59,6 +59,10 @@ public class GcodeCommandBuffer {
         return this.listIterator.hasNext();
     }
     
+    int nextIndex() {
+        return this.listIterator.nextIndex();
+    }
+    
     GcodeCommand currentCommand() {
         return this.currentCommand;
     }

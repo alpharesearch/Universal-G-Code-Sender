@@ -241,6 +241,7 @@ public class SerialCommunicator implements SerialPortEventListener{
         this.streamCommands();     
     }
     
+    //int nextIndex=0;
     void streamCommands() {
         boolean skip;
         
@@ -265,7 +266,11 @@ public class SerialCommunicator implements SerialPortEventListener{
         while ((this.commandBuffer.currentCommand().isSent() == false) &&
                 (this.commandBuffer.currentCommand().isDone() == false) &&
                 CommUtils.checkRoomInBuffer(this.activeCommandList, this.commandBuffer.currentCommand())) {
-
+            
+           // if (this.commConsoleListener != null) {
+           //     this.commConsoleListener.messageForConsole("DEBUG: "+nextIndex+"; "+(commandBuffer.nextIndex()-1)+"; "+commandBuffer.currentCommand()+"\n");
+           // }
+           // nextIndex = commandBuffer.nextIndex();
             skip = false;
             GcodeCommand command = this.commandBuffer.currentCommand();
 
@@ -307,6 +312,15 @@ public class SerialCommunicator implements SerialPortEventListener{
             // Load the next command.
             if (this.commandBuffer.hasNext()) {
                 this.commandBuffer.nextCommand();
+                try
+                {
+                    Thread.sleep(25);
+                }
+                catch ( Exception e )
+                {
+                    e.printStackTrace();
+                }
+                //while(!CommUtils.checkRoomInBuffer(this.activeCommandList, this.commandBuffer.currentCommand()));
             }
         }
 

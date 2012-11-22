@@ -71,7 +71,7 @@
                   <Group type="102" attributes="0">
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTabbedPane2" max="32767" attributes="0"/>
+                      <Component id="jTabbedPane2" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -411,7 +411,7 @@
                               <Component id="settingsTextField13" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="settingHelpLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
+                          <EmptySpace pref="21" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -695,7 +695,7 @@
                               <Component id="settingHelpLabel21" min="-2" max="-2" attributes="0"/>
                               <Component id="settingHelpLabel22" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="0" pref="126" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="77" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -916,7 +916,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="423" max="32767" attributes="0"/>
+                      <EmptySpace pref="374" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1011,7 +1011,6 @@
                                                   <Component id="G5XYTextField9" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                                                   <Component id="G5XZTextField9" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="G5XXTextField7" min="-2" max="-2" attributes="0"/>
@@ -1019,7 +1018,6 @@
                                                   <Component id="G5XYTextField7" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                                   <Component id="G5XZTextField7" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="G5XXTextField8" min="-2" max="-2" attributes="0"/>
@@ -1027,7 +1025,6 @@
                                                   <Component id="G5XYTextField8" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                                   <Component id="G5XZTextField8" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="G5XXTextField5" min="-2" max="-2" attributes="0"/>
@@ -1035,7 +1032,6 @@
                                                   <Component id="G5XYTextField5" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                                   <Component id="G5XZTextField5" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
                                                   <Component id="G5XXTextField6" min="-2" max="-2" attributes="0"/>
@@ -1043,9 +1039,9 @@
                                                   <Component id="G5XYTextField6" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="G5XZTextField6" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="G5XWButton5" alignment="1" min="-2" max="-2" attributes="0"/>
                                               <Component id="G5XWButton6" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -1138,7 +1134,7 @@
                               <Component id="G5XZTextField9" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="G5XWButton9" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="0" pref="149" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="140" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
