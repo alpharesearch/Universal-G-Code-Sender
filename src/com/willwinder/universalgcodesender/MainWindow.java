@@ -150,6 +150,20 @@ implements KeyListener, ControllerListener, MainWindowAPI {
         resetXButton = new javax.swing.JButton();
         resetYButton = new javax.swing.JButton();
         resetZButton = new javax.swing.JButton();
+        M3Button = new javax.swing.JButton();
+        M5Button = new javax.swing.JButton();
+        M3Slider = new javax.swing.JSlider();
+        jButtonG54 = new javax.swing.JButton();
+        jButtonG55 = new javax.swing.JButton();
+        jButtonG56 = new javax.swing.JButton();
+        jButtonG57 = new javax.swing.JButton();
+        jButtonG0Z0Y0Z0 = new javax.swing.JButton();
+        jLabelM3 = new javax.swing.JLabel();
+        G0X0 = new javax.swing.JButton();
+        G0Y0 = new javax.swing.JButton();
+        G0Z0 = new javax.swing.JButton();
+        jButtonG0X0Y0 = new javax.swing.JButton();
+        jButtonG58 = new javax.swing.JButton();
         connectionPanel = new javax.swing.JPanel();
         commPortComboBox = new javax.swing.JComboBox();
         baudrateSelectionComboBox = new javax.swing.JComboBox();
@@ -246,7 +260,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                     .add(commandTextField)
                     .add(commandsPanelLayout.createSequentialGroup()
                         .add(commandLabel)
-                        .add(0, 579, Short.MAX_VALUE)))
+                        .add(0, 855, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         commandsPanelLayout.setVerticalGroup(
@@ -256,7 +270,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                 .add(commandLabel)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(commandTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(143, Short.MAX_VALUE))
+                .addContainerGap(202, Short.MAX_VALUE))
         );
 
         controlContextTabbedPane.addTab("Commands", commandsPanel);
@@ -416,7 +430,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                         .add(pauseButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 95, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(cancelButton)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 491, Short.MAX_VALUE)
                         .add(visualizeButton))
                     .add(fileModePanelLayout.createSequentialGroup()
                         .add(fileModePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -546,7 +560,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                     .add(yPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(yMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(xPlusButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(xPlusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                 .add(movementButtonPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, zMinusButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -668,6 +682,105 @@ implements KeyListener, ControllerListener, MainWindowAPI {
             }
         });
 
+        M3Button.setText("M3");
+        M3Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                M3ButtonActionPerformed(evt);
+            }
+        });
+
+        M5Button.setText("M5");
+        M5Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                M5ButtonActionPerformed(evt);
+            }
+        });
+
+        M3Slider.setMajorTickSpacing(128);
+        M3Slider.setMaximum(1024);
+        M3Slider.setMinorTickSpacing(32);
+        M3Slider.setPaintTicks(true);
+        M3Slider.setSnapToTicks(true);
+        M3Slider.setValue(0);
+        M3Slider.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                M3SliderStateChanged(evt);
+            }
+        });
+
+        jButtonG54.setText("G54");
+        jButtonG54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG54ActionPerformed(evt);
+            }
+        });
+
+        jButtonG55.setText("G55");
+        jButtonG55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG55ActionPerformed(evt);
+            }
+        });
+
+        jButtonG56.setText("G56");
+        jButtonG56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG56ActionPerformed(evt);
+            }
+        });
+
+        jButtonG57.setText("G57");
+        jButtonG57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG57ActionPerformed(evt);
+            }
+        });
+
+        jButtonG0Z0Y0Z0.setText("G0 X0 Y0 Z0");
+        jButtonG0Z0Y0Z0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG0Z0Y0Z0ActionPerformed(evt);
+            }
+        });
+
+        jLabelM3.setText("S0");
+        jLabelM3.setToolTipText("");
+
+        G0X0.setText("G0 X0");
+        G0X0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                G0X0ActionPerformed(evt);
+            }
+        });
+
+        G0Y0.setText("G0 Y0");
+        G0Y0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                G0Y0ActionPerformed(evt);
+            }
+        });
+
+        G0Z0.setText("G0 Z0");
+        G0Z0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                G0Z0ActionPerformed(evt);
+            }
+        });
+
+        jButtonG0X0Y0.setText("G0 X0 Y0");
+        jButtonG0X0Y0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG0X0Y0ActionPerformed(evt);
+            }
+        });
+
+        jButtonG58.setText("G58");
+        jButtonG58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG58ActionPerformed(evt);
+            }
+        });
+
         org.jdesktop.layout.GroupLayout machineControlPanelLayout = new org.jdesktop.layout.GroupLayout(machineControlPanel);
         machineControlPanel.setLayout(machineControlPanelLayout);
         machineControlPanelLayout.setHorizontalGroup(
@@ -697,7 +810,39 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                         .add(killAlarmLock, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(toggleCheckMode, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 136, Short.MAX_VALUE)
+                .add(18, 18, 18)
+                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(machineControlPanelLayout.createSequentialGroup()
+                        .add(M3Button, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 96, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jLabelM3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 51, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .add(M5Button, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 98, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(M3Slider, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(machineControlPanelLayout.createSequentialGroup()
+                        .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(machineControlPanelLayout.createSequentialGroup()
+                                .add(jButtonG54)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(jButtonG55)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(jButtonG56)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(jButtonG57)
+                                .add(5, 5, 5)
+                                .add(jButtonG58))
+                            .add(machineControlPanelLayout.createSequentialGroup()
+                                .add(jButtonG0Z0Y0Z0)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(jButtonG0X0Y0)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(G0X0)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(G0Y0)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(G0Z0)))
+                        .add(0, 0, Short.MAX_VALUE)))
+                .add(18, 18, 18)
                 .add(keyboardMovementPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -708,27 +853,43 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                 .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(keyboardMovementPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(machineControlPanelLayout.createSequentialGroup()
-                        .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(resetCoordinatesButton)
-                            .add(resetXButton))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(returnToZeroButton)
-                            .add(resetYButton))
+                        .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                            .add(machineControlPanelLayout.createSequentialGroup()
+                                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                                    .add(resetCoordinatesButton)
+                                    .add(resetXButton)
+                                    .add(M3Button)
+                                    .add(M5Button)
+                                    .add(jLabelM3))
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                                    .add(returnToZeroButton)
+                                    .add(resetYButton)))
+                            .add(M3Slider, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(softResetMachineControl)
-                            .add(resetZButton))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(resetZButton)
+                            .add(jButtonG54)
+                            .add(jButtonG55)
+                            .add(jButtonG56)
+                            .add(jButtonG57)
+                            .add(jButtonG58))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(performHomingCycleButton)
                             .add(killAlarmLock)
-                            .add(toggleCheckMode))
+                            .add(toggleCheckMode)
+                            .add(jButtonG0Z0Y0Z0)
+                            .add(G0X0)
+                            .add(G0Y0)
+                            .add(G0Z0)
+                            .add(jButtonG0X0Y0))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(helpButtonMachineControl)
                             .add(requestStateInformation))))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
 
         controlContextTabbedPane.addTab("Machine Control", machineControlPanel);
@@ -815,7 +976,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                 .add(connectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(firmwareLabel)
                     .add(firmwareComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
 
         showVerboseOutputCheckBox.setText("Show verbose output");
@@ -958,7 +1119,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                         .add(statusPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(machinePositionZLabel)
                             .add(machinePositionZValueLabel))))
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         settingsMenu.setText("Settings");
@@ -1023,7 +1184,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(showVerboseOutputCheckBox)
                         .addContainerGap())
-                    .add(controlContextTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .add(controlContextTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 955, Short.MAX_VALUE)))
             .add(bottomTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
@@ -1042,7 +1203,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                             .add(scrollWindowCheckBox)
                             .add(showVerboseOutputCheckBox))))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(bottomTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE))
+                .add(bottomTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 349, Short.MAX_VALUE))
         );
 
         pack();
@@ -1172,30 +1333,6 @@ implements KeyListener, ControllerListener, MainWindowAPI {
     private void baudrateSelectionComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_baudrateSelectionComboBoxActionPerformed
     }//GEN-LAST:event_baudrateSelectionComboBoxActionPerformed
 
-    private void xPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xPlusButtonActionPerformed
-        this.adjustManualLocation(1, 0, 0);
-    }//GEN-LAST:event_xPlusButtonActionPerformed
-
-    private void xMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xMinusButtonActionPerformed
-        this.adjustManualLocation(-1, 0, 0);
-    }//GEN-LAST:event_xMinusButtonActionPerformed
-
-    private void yPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yPlusButtonActionPerformed
-        this.adjustManualLocation(0, 1, 0);
-    }//GEN-LAST:event_yPlusButtonActionPerformed
-
-    private void yMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yMinusButtonActionPerformed
-        this.adjustManualLocation(0, -1, 0);
-    }//GEN-LAST:event_yMinusButtonActionPerformed
-
-    private void zPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zPlusButtonActionPerformed
-        this.adjustManualLocation(0, 0, 1);
-    }//GEN-LAST:event_zPlusButtonActionPerformed
-
-    private void zMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zMinusButtonActionPerformed
-        this.adjustManualLocation(0, 0, -1);
-    }//GEN-LAST:event_zMinusButtonActionPerformed
-
 
     private void increaseStepActionPerformed(java.awt.event.ActionEvent evt) {                                             
         double stepSize = this.getStepSize();
@@ -1259,9 +1396,6 @@ implements KeyListener, ControllerListener, MainWindowAPI {
         this.setStepSize(stepSize);
     }                                            
     
-    private void stepSizeSpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_stepSizeSpinnerStateChanged
-    }//GEN-LAST:event_stepSizeSpinnerStateChanged
-
     @Override
     public  void resetCoordinatesButtonActionPerformed(){
         try {
@@ -1298,19 +1432,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
         }
     }
 
-    private void resetCoordinatesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetCoordinatesButtonActionPerformed
-    	resetCoordinatesButtonActionPerformed();
-    }//GEN-LAST:event_resetCoordinatesButtonActionPerformed
-
                                                 
-
-    private void performHomingCycleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_performHomingCycleButtonActionPerformed
-        try {
-            this.controller.performHomingCycle();
-        } catch (Exception ex) {
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }
-    }//GEN-LAST:event_performHomingCycleButtonActionPerformed
 
     @Override
     public void returnToZeroButtonActionPerformed(){
@@ -1322,68 +1444,6 @@ implements KeyListener, ControllerListener, MainWindowAPI {
             MainWindow.displayErrorDialog(ex.getMessage());
         }
     }
-    private void returnToZeroButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnToZeroButtonActionPerformed
-    	returnToZeroButtonActionPerformed();
-    }//GEN-LAST:event_returnToZeroButtonActionPerformed
-
-    private void helpButtonMachineControlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpButtonMachineControlActionPerformed
-        StringBuilder message = new StringBuilder()
-                .append(Localization.getString("mainWindow.resetZero")).append("\n")
-                .append(Localization.getString("mainWindow.returnToZero")).append("\n")
-                .append(Localization.getString("mainWindow.softReset")).append("\n")
-                .append(Localization.getString("mainWindow.homing")).append("\n")
-                .append(Localization.getString("mainWindow.alarmLock")).append("\n")
-                .append(Localization.getString("mainWindow.checkMode")).append("\n")
-                .append(Localization.getString("mainWindow.getState")).append("\n")
-                .append(Localization.getString("mainWindow.helpKeyboard")).append("\n")
-                .append(Localization.getString("mainWindow.helpKeyX")).append("\n")
-                .append(Localization.getString("mainWindow.helpKeyY")).append("\n")
-                .append(Localization.getString("mainWindow.helpKeyZ")).append("\n")
-                .append(Localization.getString("mainWindow.helpKeyPlusMinus")).append("\n")
-                .append(Localization.getString("mainWindow.helpKeyDivMul")).append("\n")
-                .append(Localization.getString("mainWindow.helpKeyZero")).append("\n")
-                ;
-        
-        JOptionPane.showMessageDialog(new JFrame(), 
-                message, 
-                Localization.getString("mainWindow.helpDialog"),
-                JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_helpButtonMachineControlActionPerformed
-
-    private void killAlarmLockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_killAlarmLockActionPerformed
-        try {
-            this.controller.killAlarmLock();
-        } catch (Exception ex) {
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }
-    }//GEN-LAST:event_killAlarmLockActionPerformed
-
-    private void toggleCheckModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleCheckModeActionPerformed
-        try {
-            this.controller.toggleCheckMode();
-        } catch (Exception ex) {
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }
-    }//GEN-LAST:event_toggleCheckModeActionPerformed
-
-    private void requestStateInformationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestStateInformationActionPerformed
-        try {
-            this.controller.viewParserState();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }
-    }//GEN-LAST:event_requestStateInformationActionPerformed
-
-    private void softResetMachineControlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_softResetMachineControlActionPerformed
-        try {
-            this.controller.issueSoftReset();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }
-    }//GEN-LAST:event_softResetMachineControlActionPerformed
-
     // TODO: It would be nice to streamline this somehow...
     private void grblConnectionSettingsMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_grblConnectionSettingsMenuItemActionPerformed
         ConnectionSettingsDialog gcsd = new ConnectionSettingsDialog(this, true);
@@ -1659,17 +1719,222 @@ implements KeyListener, ControllerListener, MainWindowAPI {
 	    this.stopPendantServerButton.setEnabled(false);
         }//GEN-LAST:event_stopPendantServerButtonActionPerformed
 
-    private void resetXCoordinateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetXCoordinateButtonActionPerformed
-        resetXCoordinateButtonActionPerformed();
-    }//GEN-LAST:event_resetXCoordinateButtonActionPerformed
+    private void M5ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_M5ButtonActionPerformed
+        try {
+            this.controller.sendCommand("M5");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_M5ButtonActionPerformed
+
+    private void M3ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_M3ButtonActionPerformed
+        try {
+            int s = M3Slider.getValue();
+            this.controller.sendCommand("M3 S" + Integer.toString(s));
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_M3ButtonActionPerformed
+
+    private void resetZCoordinateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetZCoordinateButtonActionPerformed
+        resetZCoordinateButtonActionPerformed();
+    }//GEN-LAST:event_resetZCoordinateButtonActionPerformed
 
     private void resetYCoordinateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetYCoordinateButtonActionPerformed
         resetYCoordinateButtonActionPerformed();
     }//GEN-LAST:event_resetYCoordinateButtonActionPerformed
 
-    private void resetZCoordinateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetZCoordinateButtonActionPerformed
-        resetZCoordinateButtonActionPerformed();
-    }//GEN-LAST:event_resetZCoordinateButtonActionPerformed
+    private void resetXCoordinateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetXCoordinateButtonActionPerformed
+        resetXCoordinateButtonActionPerformed();
+    }//GEN-LAST:event_resetXCoordinateButtonActionPerformed
+
+    private void requestStateInformationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestStateInformationActionPerformed
+        try {
+            this.controller.viewParserState();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_requestStateInformationActionPerformed
+
+    private void softResetMachineControlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_softResetMachineControlActionPerformed
+        try {
+            this.controller.issueSoftReset();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_softResetMachineControlActionPerformed
+
+    private void helpButtonMachineControlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpButtonMachineControlActionPerformed
+        StringBuilder message = new StringBuilder()
+        .append(Localization.getString("mainWindow.resetZero")).append("\n")
+        .append(Localization.getString("mainWindow.returnToZero")).append("\n")
+        .append(Localization.getString("mainWindow.softReset")).append("\n")
+        .append(Localization.getString("mainWindow.homing")).append("\n")
+        .append(Localization.getString("mainWindow.alarmLock")).append("\n")
+        .append(Localization.getString("mainWindow.checkMode")).append("\n")
+        .append(Localization.getString("mainWindow.getState")).append("\n")
+        .append(Localization.getString("mainWindow.helpKeyboard")).append("\n")
+        .append(Localization.getString("mainWindow.helpKeyX")).append("\n")
+        .append(Localization.getString("mainWindow.helpKeyY")).append("\n")
+        .append(Localization.getString("mainWindow.helpKeyZ")).append("\n")
+        .append(Localization.getString("mainWindow.helpKeyPlusMinus")).append("\n")
+        .append(Localization.getString("mainWindow.helpKeyDivMul")).append("\n")
+        .append(Localization.getString("mainWindow.helpKeyZero")).append("\n")
+        ;
+
+        JOptionPane.showMessageDialog(new JFrame(),
+            message,
+            Localization.getString("mainWindow.helpDialog"),
+            JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_helpButtonMachineControlActionPerformed
+
+    private void toggleCheckModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleCheckModeActionPerformed
+        try {
+            this.controller.toggleCheckMode();
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_toggleCheckModeActionPerformed
+
+    private void killAlarmLockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_killAlarmLockActionPerformed
+        try {
+            this.controller.killAlarmLock();
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_killAlarmLockActionPerformed
+
+    private void performHomingCycleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_performHomingCycleButtonActionPerformed
+        try {
+            this.controller.performHomingCycle();
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_performHomingCycleButtonActionPerformed
+
+    private void yPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yPlusButtonActionPerformed
+        this.adjustManualLocation(0, 1, 0);
+    }//GEN-LAST:event_yPlusButtonActionPerformed
+
+    private void zPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zPlusButtonActionPerformed
+        this.adjustManualLocation(0, 0, 1);
+    }//GEN-LAST:event_zPlusButtonActionPerformed
+
+    private void xMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xMinusButtonActionPerformed
+        this.adjustManualLocation(-1, 0, 0);
+    }//GEN-LAST:event_xMinusButtonActionPerformed
+
+    private void xPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xPlusButtonActionPerformed
+        this.adjustManualLocation(1, 0, 0);
+    }//GEN-LAST:event_xPlusButtonActionPerformed
+
+    private void yMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yMinusButtonActionPerformed
+        this.adjustManualLocation(0, -1, 0);
+    }//GEN-LAST:event_yMinusButtonActionPerformed
+
+    private void zMinusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zMinusButtonActionPerformed
+        this.adjustManualLocation(0, 0, -1);
+    }//GEN-LAST:event_zMinusButtonActionPerformed
+
+    private void stepSizeSpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_stepSizeSpinnerStateChanged
+
+    }//GEN-LAST:event_stepSizeSpinnerStateChanged
+
+    private void returnToZeroButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnToZeroButtonActionPerformed
+        returnToZeroButtonActionPerformed();
+    }//GEN-LAST:event_returnToZeroButtonActionPerformed
+
+    private void resetCoordinatesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetCoordinatesButtonActionPerformed
+        resetCoordinatesButtonActionPerformed();
+    }//GEN-LAST:event_resetCoordinatesButtonActionPerformed
+
+    private void jButtonG54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG54ActionPerformed
+        try {
+            this.controller.sendCommand("G54");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonG54ActionPerformed
+
+    private void jButtonG55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG55ActionPerformed
+        try {
+            this.controller.sendCommand("G55");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonG55ActionPerformed
+
+    private void jButtonG56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG56ActionPerformed
+        try {
+            this.controller.sendCommand("G56");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonG56ActionPerformed
+
+    private void jButtonG57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG57ActionPerformed
+        try {
+            this.controller.sendCommand("G57");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonG57ActionPerformed
+
+    private void jButtonG0Z0Y0Z0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG0Z0Y0Z0ActionPerformed
+        try {
+            this.controller.sendCommand("G0 G90 X0 Y0 Z0");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonG0Z0Y0Z0ActionPerformed
+
+    private void M3SliderStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_M3SliderStateChanged
+        int s = M3Slider.getValue();
+        jLabelM3.setText("S"+Integer.toString(s));
+
+    }//GEN-LAST:event_M3SliderStateChanged
+
+    private void G0X0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G0X0ActionPerformed
+    try {
+            this.controller.sendCommand("G0 G90 X0");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }  
+    }//GEN-LAST:event_G0X0ActionPerformed
+
+    private void G0Y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G0Y0ActionPerformed
+    try {
+            this.controller.sendCommand("G0 G90 Y0");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }  
+    }//GEN-LAST:event_G0Y0ActionPerformed
+
+    private void G0Z0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G0Z0ActionPerformed
+    try {
+            this.controller.sendCommand("G0 G90 Z0");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }  
+    }//GEN-LAST:event_G0Z0ActionPerformed
+
+    private void jButtonG0X0Y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG0X0Y0ActionPerformed
+    try {
+            this.controller.sendCommand("G0 G90 X0 Y0");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        } 
+    }//GEN-LAST:event_jButtonG0X0Y0ActionPerformed
+
+    private void jButtonG58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG58ActionPerformed
+    try {
+            this.controller.sendCommand("G57");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        } 
+    }//GEN-LAST:event_jButtonG58ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2523,6 +2788,12 @@ implements KeyListener, ControllerListener, MainWindowAPI {
 
     // Generated variables.
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton G0X0;
+    private javax.swing.JButton G0Y0;
+    private javax.swing.JButton G0Z0;
+    private javax.swing.JButton M3Button;
+    private javax.swing.JSlider M3Slider;
+    private javax.swing.JButton M5Button;
     private javax.swing.JMenu PendantMenu;
     private javax.swing.JLabel activeStateLabel;
     private javax.swing.JLabel activeStateValueLabel;
@@ -2552,6 +2823,14 @@ implements KeyListener, ControllerListener, MainWindowAPI {
     private javax.swing.JMenuItem grblConnectionSettingsMenuItem;
     private javax.swing.JMenuItem grblFirmwareSettingsMenuItem;
     private javax.swing.JButton helpButtonMachineControl;
+    private javax.swing.JButton jButtonG0X0Y0;
+    private javax.swing.JButton jButtonG0Z0Y0Z0;
+    private javax.swing.JButton jButtonG54;
+    private javax.swing.JButton jButtonG55;
+    private javax.swing.JButton jButtonG56;
+    private javax.swing.JButton jButtonG57;
+    private javax.swing.JButton jButtonG58;
+    private javax.swing.JLabel jLabelM3;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;

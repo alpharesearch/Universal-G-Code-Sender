@@ -109,6 +109,12 @@ public abstract class AbstractController implements SerialCommunicatorListener {
     public void resetCoordinateToZero(final char coord) throws Exception {
         throw new Exception(Localization.getString("controller.exception.reset"));
     }
+        /**
+     * Reset given machine coordinate to zero at the current location.
+     */
+    public void sendCommand(final String command2) throws Exception {
+        throw new Exception(Localization.getString("controller.exception.reset"));
+    }
     
     /**
      * Disable alarm mode and put device into idle state, throw an exception 

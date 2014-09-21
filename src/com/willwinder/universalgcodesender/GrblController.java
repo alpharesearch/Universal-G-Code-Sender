@@ -254,6 +254,19 @@ public class GrblController extends AbstractController {
         super.resetCoordinatesToZero();
     }
     
+        @Override
+    public void sendCommand(final String command2) throws Exception {
+        if (this.isCommOpen()) {
+            String command = command2;
+            if (!"".equals(command)) {
+                this.queueStringForComm(command);
+                return;
+            }
+        }
+        // Throw exception
+        super.resetCoordinatesToZero();
+    }
+    
     @Override
     public void returnToHome() throws Exception {
         if (this.isCommOpen()) {
