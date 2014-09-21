@@ -35,6 +35,7 @@ import com.willwinder.universalgcodesender.uielements.GcodeFileTypeFilter;
 import com.willwinder.universalgcodesender.uielements.GrblFirmwareSettingsDialog;
 import com.willwinder.universalgcodesender.uielements.StepSizeSpinnerModel;
 import com.willwinder.universalgcodesender.visualizer.VisualizerWindow;
+import com.willwinder.universalgcodesender.Version;
 import gnu.io.CommPortIdentifier;
 import gnu.io.PortInUseException;
 import java.awt.Color;
@@ -73,7 +74,7 @@ import javax.vecmath.Point3d;
  */
 public class MainWindow extends javax.swing.JFrame 
 implements KeyListener, ControllerListener, MainWindowAPI {
-    private static String VERSION = "1.0.8";
+    private static String VERSION = Version.getVersion() + " " + Version.getTimestamp();
     private PendantUI pendantUI;
     private Settings settings;
     
@@ -150,19 +151,32 @@ implements KeyListener, ControllerListener, MainWindowAPI {
         resetXButton = new javax.swing.JButton();
         resetYButton = new javax.swing.JButton();
         resetZButton = new javax.swing.JButton();
-        M3Button = new javax.swing.JButton();
-        M5Button = new javax.swing.JButton();
-        M3Slider = new javax.swing.JSlider();
-        jButtonG54 = new javax.swing.JButton();
+        macroPanel = new javax.swing.JPanel();
+        customGcodeButton4 = new javax.swing.JButton();
+        customGcodeButton3 = new javax.swing.JButton();
+        customGcodeButton2 = new javax.swing.JButton();
+        customGcodeButton1 = new javax.swing.JButton();
+        customGcodeButton5 = new javax.swing.JButton();
+        customGcodeText1 = new javax.swing.JTextField();
+        customGcodeText2 = new javax.swing.JTextField();
+        customGcodeText3 = new javax.swing.JTextField();
+        customGcodeText4 = new javax.swing.JTextField();
+        customGcodeText5 = new javax.swing.JTextField();
+        macroInstructions = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jButtonG55 = new javax.swing.JButton();
-        jButtonG56 = new javax.swing.JButton();
-        jButtonG57 = new javax.swing.JButton();
-        jButtonG0Z0Y0Z0 = new javax.swing.JButton();
-        jLabelM3 = new javax.swing.JLabel();
+        jButtonG54 = new javax.swing.JButton();
+        M3Slider = new javax.swing.JSlider();
+        M5Button = new javax.swing.JButton();
+        M3Button = new javax.swing.JButton();
         G0X0 = new javax.swing.JButton();
         G0Y0 = new javax.swing.JButton();
-        G0Z0 = new javax.swing.JButton();
+        jButtonG0Z0Y0Z0 = new javax.swing.JButton();
+        jLabelM3 = new javax.swing.JLabel();
+        jButtonG56 = new javax.swing.JButton();
+        jButtonG57 = new javax.swing.JButton();
         jButtonG0X0Y0 = new javax.swing.JButton();
+        G0Z0 = new javax.swing.JButton();
         jButtonG58 = new javax.swing.JButton();
         connectionPanel = new javax.swing.JPanel();
         commPortComboBox = new javax.swing.JComboBox();
@@ -260,7 +274,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                     .add(commandTextField)
                     .add(commandsPanelLayout.createSequentialGroup()
                         .add(commandLabel)
-                        .add(0, 855, Short.MAX_VALUE)))
+                        .add(0, 595, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         commandsPanelLayout.setVerticalGroup(
@@ -270,7 +284,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                 .add(commandLabel)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(commandTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(202, Short.MAX_VALUE))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
 
         controlContextTabbedPane.addTab("Commands", commandsPanel);
@@ -430,7 +444,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                         .add(pauseButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 95, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(cancelButton)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 491, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .add(visualizeButton))
                     .add(fileModePanelLayout.createSequentialGroup()
                         .add(fileModePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -682,17 +696,219 @@ implements KeyListener, ControllerListener, MainWindowAPI {
             }
         });
 
-        M3Button.setText("M3");
-        M3Button.addActionListener(new java.awt.event.ActionListener() {
+        org.jdesktop.layout.GroupLayout machineControlPanelLayout = new org.jdesktop.layout.GroupLayout(machineControlPanel);
+        machineControlPanel.setLayout(machineControlPanelLayout);
+        machineControlPanelLayout.setHorizontalGroup(
+            machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, machineControlPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(machineControlPanelLayout.createSequentialGroup()
+                        .add(softResetMachineControl, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 159, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(resetZButton))
+                    .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                        .add(org.jdesktop.layout.GroupLayout.LEADING, machineControlPanelLayout.createSequentialGroup()
+                            .add(requestStateInformation, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(helpButtonMachineControl))
+                        .add(org.jdesktop.layout.GroupLayout.LEADING, machineControlPanelLayout.createSequentialGroup()
+                            .add(performHomingCycleButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                            .add(killAlarmLock, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                            .add(toggleCheckMode, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                    .add(machineControlPanelLayout.createSequentialGroup()
+                        .add(resetCoordinatesButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 159, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(resetXButton))
+                    .add(machineControlPanelLayout.createSequentialGroup()
+                        .add(returnToZeroButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 159, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(resetYButton)))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED, 162, Short.MAX_VALUE)
+                .add(keyboardMovementPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        machineControlPanelLayout.setVerticalGroup(
+            machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(machineControlPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(keyboardMovementPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(0, 80, Short.MAX_VALUE))
+            .add(machineControlPanelLayout.createSequentialGroup()
+                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(resetCoordinatesButton)
+                    .add(resetXButton))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(returnToZeroButton)
+                    .add(resetYButton))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(softResetMachineControl)
+                    .add(resetZButton))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(performHomingCycleButton)
+                    .add(killAlarmLock)
+                    .add(toggleCheckMode))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(requestStateInformation)
+                    .add(helpButtonMachineControl))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        controlContextTabbedPane.addTab("Machine Control", machineControlPanel);
+
+        customGcodeButton4.setText("C4");
+        customGcodeButton4.setEnabled(false);
+        customGcodeButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                M3ButtonActionPerformed(evt);
+                customGcodeButton4ActionPerformed(evt);
             }
         });
 
-        M5Button.setText("M5");
-        M5Button.addActionListener(new java.awt.event.ActionListener() {
+        customGcodeButton3.setText("C3");
+        customGcodeButton3.setEnabled(false);
+        customGcodeButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                M5ButtonActionPerformed(evt);
+                customGcodeButton3ActionPerformed(evt);
+            }
+        });
+
+        customGcodeButton2.setText("C2");
+        customGcodeButton2.setEnabled(false);
+        customGcodeButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customGcodeButton2ActionPerformed(evt);
+            }
+        });
+
+        customGcodeButton1.setText("C1");
+        customGcodeButton1.setEnabled(false);
+        customGcodeButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customGcodeButton1ActionPerformed(evt);
+            }
+        });
+
+        customGcodeButton5.setText("C5");
+        customGcodeButton5.setEnabled(false);
+        customGcodeButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customGcodeButton5ActionPerformed(evt);
+            }
+        });
+
+        customGcodeText1.setText("G91 X0 Y0");
+        customGcodeText1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customGcodeText1ActionPerformed(evt);
+            }
+        });
+
+        customGcodeText2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customGcodeText2ActionPerformed(evt);
+            }
+        });
+
+        customGcodeText3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customGcodeText3ActionPerformed(evt);
+            }
+        });
+
+        customGcodeText4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customGcodeText4ActionPerformed(evt);
+            }
+        });
+
+        customGcodeText5.setToolTipText("");
+        customGcodeText5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customGcodeText5ActionPerformed(evt);
+            }
+        });
+
+        macroInstructions.setText("asgasg");
+
+        org.jdesktop.layout.GroupLayout macroPanelLayout = new org.jdesktop.layout.GroupLayout(macroPanel);
+        macroPanel.setLayout(macroPanelLayout);
+        macroPanelLayout.setHorizontalGroup(
+            macroPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(macroPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(macroPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(macroPanelLayout.createSequentialGroup()
+                        .add(customGcodeButton1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(customGcodeText1))
+                    .add(macroPanelLayout.createSequentialGroup()
+                        .add(customGcodeButton2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(customGcodeText2))
+                    .add(macroPanelLayout.createSequentialGroup()
+                        .add(customGcodeButton4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(customGcodeText4))
+                    .add(macroPanelLayout.createSequentialGroup()
+                        .add(customGcodeButton3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(customGcodeText3))
+                    .add(macroPanelLayout.createSequentialGroup()
+                        .add(customGcodeButton5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(customGcodeText5))
+                    .add(macroPanelLayout.createSequentialGroup()
+                        .add(macroInstructions)
+                        .add(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        macroPanelLayout.setVerticalGroup(
+            macroPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(macroPanelLayout.createSequentialGroup()
+                .add(8, 8, 8)
+                .add(macroInstructions)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(macroPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(customGcodeButton1)
+                    .add(customGcodeText1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(macroPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(customGcodeButton2)
+                    .add(customGcodeText2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(macroPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(customGcodeButton3)
+                    .add(customGcodeText3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(macroPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(customGcodeButton4)
+                    .add(customGcodeText4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(macroPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(customGcodeButton5)
+                    .add(customGcodeText5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(76, Short.MAX_VALUE))
+        );
+
+        controlContextTabbedPane.addTab("Macros", macroPanel);
+
+        jButtonG55.setText("G55");
+        jButtonG55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG55ActionPerformed(evt);
+            }
+        });
+
+        jButtonG54.setText("G54");
+        jButtonG54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG54ActionPerformed(evt);
             }
         });
 
@@ -708,43 +924,19 @@ implements KeyListener, ControllerListener, MainWindowAPI {
             }
         });
 
-        jButtonG54.setText("G54");
-        jButtonG54.addActionListener(new java.awt.event.ActionListener() {
+        M5Button.setText("M5");
+        M5Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonG54ActionPerformed(evt);
+                M5ButtonActionPerformed(evt);
             }
         });
 
-        jButtonG55.setText("G55");
-        jButtonG55.addActionListener(new java.awt.event.ActionListener() {
+        M3Button.setText("M3");
+        M3Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonG55ActionPerformed(evt);
+                M3ButtonActionPerformed(evt);
             }
         });
-
-        jButtonG56.setText("G56");
-        jButtonG56.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonG56ActionPerformed(evt);
-            }
-        });
-
-        jButtonG57.setText("G57");
-        jButtonG57.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonG57ActionPerformed(evt);
-            }
-        });
-
-        jButtonG0Z0Y0Z0.setText("G0 X0 Y0 Z0");
-        jButtonG0Z0Y0Z0.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonG0Z0Y0Z0ActionPerformed(evt);
-            }
-        });
-
-        jLabelM3.setText("S0");
-        jLabelM3.setToolTipText("");
 
         G0X0.setText("G0 X0");
         G0X0.addActionListener(new java.awt.event.ActionListener() {
@@ -760,10 +952,27 @@ implements KeyListener, ControllerListener, MainWindowAPI {
             }
         });
 
-        G0Z0.setText("G0 Z0");
-        G0Z0.addActionListener(new java.awt.event.ActionListener() {
+        jButtonG0Z0Y0Z0.setText("G0 X0 Y0 Z0");
+        jButtonG0Z0Y0Z0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                G0Z0ActionPerformed(evt);
+                jButtonG0Z0Y0Z0ActionPerformed(evt);
+            }
+        });
+
+        jLabelM3.setText("S0");
+        jLabelM3.setToolTipText("");
+
+        jButtonG56.setText("G56");
+        jButtonG56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG56ActionPerformed(evt);
+            }
+        });
+
+        jButtonG57.setText("G57");
+        jButtonG57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonG57ActionPerformed(evt);
             }
         });
 
@@ -774,6 +983,13 @@ implements KeyListener, ControllerListener, MainWindowAPI {
             }
         });
 
+        G0Z0.setText("G0 Z0");
+        G0Z0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                G0Z0ActionPerformed(evt);
+            }
+        });
+
         jButtonG58.setText("G58");
         jButtonG58.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -781,118 +997,76 @@ implements KeyListener, ControllerListener, MainWindowAPI {
             }
         });
 
-        org.jdesktop.layout.GroupLayout machineControlPanelLayout = new org.jdesktop.layout.GroupLayout(machineControlPanel);
-        machineControlPanel.setLayout(machineControlPanelLayout);
-        machineControlPanelLayout.setHorizontalGroup(
-            machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, machineControlPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, machineControlPanelLayout.createSequentialGroup()
-                        .add(requestStateInformation, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(35, 35, 35)
-                        .add(helpButtonMachineControl))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, machineControlPanelLayout.createSequentialGroup()
-                        .add(resetCoordinatesButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 159, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(33, 33, 33)
-                        .add(resetXButton))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, machineControlPanelLayout.createSequentialGroup()
-                        .add(returnToZeroButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 159, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(resetYButton))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, machineControlPanelLayout.createSequentialGroup()
-                        .add(softResetMachineControl, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 159, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(resetZButton))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, machineControlPanelLayout.createSequentialGroup()
-                        .add(performHomingCycleButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(killAlarmLock, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(toggleCheckMode, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .add(18, 18, 18)
-                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(machineControlPanelLayout.createSequentialGroup()
-                        .add(M3Button, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 96, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jLabelM3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 51, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(M5Button, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 98, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(M3Slider, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(machineControlPanelLayout.createSequentialGroup()
-                        .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(machineControlPanelLayout.createSequentialGroup()
-                                .add(jButtonG54)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(jButtonG55)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(jButtonG56)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(jButtonG57)
-                                .add(5, 5, 5)
-                                .add(jButtonG58))
-                            .add(machineControlPanelLayout.createSequentialGroup()
-                                .add(jButtonG0Z0Y0Z0)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(jButtonG0X0Y0)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(G0X0)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(G0Y0)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(G0Z0)))
-                        .add(0, 0, Short.MAX_VALUE)))
-                .add(18, 18, 18)
-                .add(keyboardMovementPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        machineControlPanelLayout.setVerticalGroup(
-            machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(machineControlPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(keyboardMovementPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(machineControlPanelLayout.createSequentialGroup()
-                        .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(machineControlPanelLayout.createSequentialGroup()
-                                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                                    .add(resetCoordinatesButton)
-                                    .add(resetXButton)
-                                    .add(M3Button)
-                                    .add(M5Button)
-                                    .add(jLabelM3))
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                                    .add(returnToZeroButton)
-                                    .add(resetYButton)))
-                            .add(M3Slider, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(softResetMachineControl)
-                            .add(resetZButton)
+        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 943, Short.MAX_VALUE)
+            .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(jPanel1Layout.createSequentialGroup()
+                    .add(246, 246, 246)
+                    .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                        .add(jPanel1Layout.createSequentialGroup()
+                            .add(M3Button, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 96, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                            .add(jLabelM3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 51, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(M5Button, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 98, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(M3Slider, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .add(jPanel1Layout.createSequentialGroup()
                             .add(jButtonG54)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                             .add(jButtonG55)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                             .add(jButtonG56)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                             .add(jButtonG57)
+                            .add(5, 5, 5)
                             .add(jButtonG58))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(performHomingCycleButton)
-                            .add(killAlarmLock)
-                            .add(toggleCheckMode)
+                        .add(jPanel1Layout.createSequentialGroup()
                             .add(jButtonG0Z0Y0Z0)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                            .add(jButtonG0X0Y0)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                             .add(G0X0)
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                             .add(G0Y0)
-                            .add(G0Z0)
-                            .add(jButtonG0X0Y0))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(machineControlPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(helpButtonMachineControl)
-                            .add(requestStateInformation))))
-                .addContainerGap(81, Short.MAX_VALUE))
+                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                            .add(G0Z0)))
+                    .add(246, 246, 246)))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 254, Short.MAX_VALUE)
+            .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(jPanel1Layout.createSequentialGroup()
+                    .add(48, 48, 48)
+                    .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                        .add(jPanel1Layout.createSequentialGroup()
+                            .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                                .add(M3Button)
+                                .add(M5Button)
+                                .add(jLabelM3))
+                            .add(31, 31, 31))
+                        .add(M3Slider, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                    .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                        .add(jButtonG54)
+                        .add(jButtonG55)
+                        .add(jButtonG56)
+                        .add(jButtonG57)
+                        .add(jButtonG58))
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                        .add(jButtonG0Z0Y0Z0)
+                        .add(G0X0)
+                        .add(G0Y0)
+                        .add(G0Z0)
+                        .add(jButtonG0X0Y0))
+                    .add(49, 49, 49)))
         );
 
-        controlContextTabbedPane.addTab("Machine Control", machineControlPanel);
+        controlContextTabbedPane.addTab("Laser", jPanel1);
 
         connectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Connection"));
         connectionPanel.setMaximumSize(new java.awt.Dimension(247, 100));
@@ -1184,7 +1358,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(showVerboseOutputCheckBox)
                         .addContainerGap())
-                    .add(controlContextTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 955, Short.MAX_VALUE)))
+                    .add(controlContextTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
             .add(bottomTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
@@ -1203,7 +1377,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                             .add(scrollWindowCheckBox)
                             .add(showVerboseOutputCheckBox))))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(bottomTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 349, Short.MAX_VALUE))
+                .add(bottomTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE))
         );
 
         pack();
@@ -1719,22 +1893,29 @@ implements KeyListener, ControllerListener, MainWindowAPI {
 	    this.stopPendantServerButton.setEnabled(false);
         }//GEN-LAST:event_stopPendantServerButtonActionPerformed
 
-    private void M5ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_M5ButtonActionPerformed
-        try {
-            this.controller.sendCommand("M5");
-        } catch (Exception ex) {
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }
-    }//GEN-LAST:event_M5ButtonActionPerformed
+    private void customGcodeText1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customGcodeText1ActionPerformed
+        this.settings.setCustomGcode1(this.customGcodeText1.getText());
+    }//GEN-LAST:event_customGcodeText1ActionPerformed
 
-    private void M3ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_M3ButtonActionPerformed
-        try {
-            int s = M3Slider.getValue();
-            this.controller.sendCommand("M3 S" + Integer.toString(s));
-        } catch (Exception ex) {
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }
-    }//GEN-LAST:event_M3ButtonActionPerformed
+    private void customGcodeButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customGcodeButton5ActionPerformed
+        executeCustomGcode(this.customGcodeText5.getText());
+    }//GEN-LAST:event_customGcodeButton5ActionPerformed
+
+    private void customGcodeButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customGcodeButton1ActionPerformed
+        executeCustomGcode(this.customGcodeText1.getText());
+    }//GEN-LAST:event_customGcodeButton1ActionPerformed
+
+    private void customGcodeButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customGcodeButton2ActionPerformed
+        executeCustomGcode(this.customGcodeText2.getText());
+    }//GEN-LAST:event_customGcodeButton2ActionPerformed
+
+    private void customGcodeButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customGcodeButton3ActionPerformed
+        executeCustomGcode(this.customGcodeText3.getText());
+    }//GEN-LAST:event_customGcodeButton3ActionPerformed
+
+    private void customGcodeButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customGcodeButton4ActionPerformed
+        executeCustomGcode(this.customGcodeText4.getText());
+    }//GEN-LAST:event_customGcodeButton4ActionPerformed
 
     private void resetZCoordinateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetZCoordinateButtonActionPerformed
         resetZCoordinateButtonActionPerformed();
@@ -1850,13 +2031,21 @@ implements KeyListener, ControllerListener, MainWindowAPI {
         resetCoordinatesButtonActionPerformed();
     }//GEN-LAST:event_resetCoordinatesButtonActionPerformed
 
-    private void jButtonG54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG54ActionPerformed
-        try {
-            this.controller.sendCommand("G54");
-        } catch (Exception ex) {
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonG54ActionPerformed
+    private void customGcodeText2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customGcodeText2ActionPerformed
+        this.settings.setCustomGcode2(this.customGcodeText2.getText());
+    }//GEN-LAST:event_customGcodeText2ActionPerformed
+
+    private void customGcodeText3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customGcodeText3ActionPerformed
+        this.settings.setCustomGcode3(this.customGcodeText3.getText());
+    }//GEN-LAST:event_customGcodeText3ActionPerformed
+
+    private void customGcodeText4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customGcodeText4ActionPerformed
+        this.settings.setCustomGcode4(this.customGcodeText4.getText());
+    }//GEN-LAST:event_customGcodeText4ActionPerformed
+
+    private void customGcodeText5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customGcodeText5ActionPerformed
+        this.settings.setCustomGcode5(this.customGcodeText5.getText());
+    }//GEN-LAST:event_customGcodeText5ActionPerformed
 
     private void jButtonG55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG55ActionPerformed
         try {
@@ -1865,6 +2054,60 @@ implements KeyListener, ControllerListener, MainWindowAPI {
             MainWindow.displayErrorDialog(ex.getMessage());
         }        // TODO add your handling code here:
     }//GEN-LAST:event_jButtonG55ActionPerformed
+
+    private void jButtonG54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG54ActionPerformed
+        try {
+            this.controller.sendCommand("G54");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonG54ActionPerformed
+
+    private void M3SliderStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_M3SliderStateChanged
+        int s = M3Slider.getValue();
+        jLabelM3.setText("S"+Integer.toString(s));
+    }//GEN-LAST:event_M3SliderStateChanged
+
+    private void M5ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_M5ButtonActionPerformed
+        try {
+            this.controller.sendCommand("M5");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_M5ButtonActionPerformed
+
+    private void M3ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_M3ButtonActionPerformed
+        try {
+            int s = M3Slider.getValue();
+            this.controller.sendCommand("M3 S" + Integer.toString(s));
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_M3ButtonActionPerformed
+
+    private void G0X0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G0X0ActionPerformed
+        try {
+            this.controller.sendCommand("G0 G90 X0");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_G0X0ActionPerformed
+
+    private void G0Y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G0Y0ActionPerformed
+        try {
+            this.controller.sendCommand("G0 G90 Y0");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_G0Y0ActionPerformed
+
+    private void jButtonG0Z0Y0Z0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG0Z0Y0Z0ActionPerformed
+        try {
+            this.controller.sendCommand("G0 G90 X0 Y0 Z0");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonG0Z0Y0Z0ActionPerformed
 
     private void jButtonG56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG56ActionPerformed
         try {
@@ -1882,60 +2125,55 @@ implements KeyListener, ControllerListener, MainWindowAPI {
         }        // TODO add your handling code here:
     }//GEN-LAST:event_jButtonG57ActionPerformed
 
-    private void jButtonG0Z0Y0Z0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG0Z0Y0Z0ActionPerformed
-        try {
-            this.controller.sendCommand("G0 G90 X0 Y0 Z0");
-        } catch (Exception ex) {
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonG0Z0Y0Z0ActionPerformed
-
-    private void M3SliderStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_M3SliderStateChanged
-        int s = M3Slider.getValue();
-        jLabelM3.setText("S"+Integer.toString(s));
-
-    }//GEN-LAST:event_M3SliderStateChanged
-
-    private void G0X0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G0X0ActionPerformed
-    try {
-            this.controller.sendCommand("G0 G90 X0");
-        } catch (Exception ex) {
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }  
-    }//GEN-LAST:event_G0X0ActionPerformed
-
-    private void G0Y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G0Y0ActionPerformed
-    try {
-            this.controller.sendCommand("G0 G90 Y0");
-        } catch (Exception ex) {
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }  
-    }//GEN-LAST:event_G0Y0ActionPerformed
-
-    private void G0Z0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G0Z0ActionPerformed
-    try {
-            this.controller.sendCommand("G0 G90 Z0");
-        } catch (Exception ex) {
-            MainWindow.displayErrorDialog(ex.getMessage());
-        }  
-    }//GEN-LAST:event_G0Z0ActionPerformed
-
     private void jButtonG0X0Y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG0X0Y0ActionPerformed
-    try {
+        try {
             this.controller.sendCommand("G0 G90 X0 Y0");
         } catch (Exception ex) {
             MainWindow.displayErrorDialog(ex.getMessage());
-        } 
+        }
     }//GEN-LAST:event_jButtonG0X0Y0ActionPerformed
 
+    private void G0Z0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G0Z0ActionPerformed
+        try {
+            this.controller.sendCommand("G0 G90 Z0");
+        } catch (Exception ex) {
+            MainWindow.displayErrorDialog(ex.getMessage());
+        }
+    }//GEN-LAST:event_G0Z0ActionPerformed
+
     private void jButtonG58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonG58ActionPerformed
-    try {
+        try {
             this.controller.sendCommand("G57");
         } catch (Exception ex) {
             MainWindow.displayErrorDialog(ex.getMessage());
-        } 
+        }
     }//GEN-LAST:event_jButtonG58ActionPerformed
 
+    private void executeCustomGcode(String str)
+    {
+        str = str.replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "");
+        final String[] parts = str.split(";");
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    for (String cmd : parts)
+                    {
+                        controller.queueStringForComm(cmd);
+                    }
+                } catch (Exception ex) {
+                    displayErrorDialog(ex.getMessage());
+                }
+            }
+        });
+        
+        for (String cmd : parts)
+        {
+            this.manualCommandHistory.add(cmd);
+            this.commandNum = -1;
+        }
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -1982,6 +2220,11 @@ implements KeyListener, ControllerListener, MainWindowAPI {
         mw.scrollWindowCheckBox.setSelected(mw.settings.isScrollWindowEnabled());
         mw.showVerboseOutputCheckBox.setSelected(mw.settings.isVerboseOutputEnabled());
         mw.firmwareComboBox.setSelectedItem(mw.settings.getFirmwareVersion());
+        mw.customGcodeText1.setText(mw.settings.getCustomGcode1());
+        mw.customGcodeText2.setText(mw.settings.getCustomGcode2());
+        mw.customGcodeText3.setText(mw.settings.getCustomGcode3());
+        mw.customGcodeText4.setText(mw.settings.getCustomGcode4());
+        mw.customGcodeText5.setText(mw.settings.getCustomGcode5());
         mw.setSize(mw.settings.getMainWindowSettings().width, mw.settings.getMainWindowSettings().height);
         mw.setLocation(mw.settings.getMainWindowSettings().xLocation, mw.settings.getMainWindowSettings().yLocation);
 //        mw.setSize(java.awt.GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds().width, java.awt.GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds().width);
@@ -2244,6 +2487,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                 this.updateConnectionControls(false);
                 this.updateManualControls(false);
                 this.updateWorkflowControls(false);
+                this.updateCustomGcodeControls(false);
                 this.updateFileControls(false);
                 this.updateControlsStopSending();
                 this.setStatusColorForState("");
@@ -2252,6 +2496,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
                 this.updateConnectionControls(true);
                 this.updateManualControls(true);
                 this.updateWorkflowControls(true);
+                this.updateCustomGcodeControls(true);
                 this.updateControlsStopSending();
                 break;
             case COMM_SENDING:
@@ -2266,7 +2511,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
 
                 // Workflow tab
                 this.updateWorkflowControls(false);
-
+                this.updateCustomGcodeControls(false);
                 // Jogging commands
                 this.updateManualControls(false);
         
@@ -2352,6 +2597,19 @@ implements KeyListener, ControllerListener, MainWindowAPI {
         this.toggleCheckMode.setEnabled(enabled);
         this.requestStateInformation.setEnabled(enabled);
     }
+    
+    private void updateCustomGcodeControls(boolean enabled) {
+        this.customGcodeButton1.setEnabled(enabled);    
+        this.customGcodeButton2.setEnabled(enabled);   
+        this.customGcodeButton3.setEnabled(enabled);
+        this.customGcodeButton4.setEnabled(enabled);
+        this.customGcodeButton5.setEnabled(enabled);        
+        this.customGcodeText1.setEnabled(enabled);
+        this.customGcodeText2.setEnabled(enabled);
+        this.customGcodeText3.setEnabled(enabled);
+        this.customGcodeText4.setEnabled(enabled);
+        this.customGcodeText5.setEnabled(enabled);
+    }
 
     private void resetTimerLabels() {
         // Reset labels
@@ -2388,6 +2646,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
         this.controlContextTabbedPane.setTitleAt(0, Localization.getString("mainWindow.swing.controlContextTabbedPane.commands"));
         this.controlContextTabbedPane.setTitleAt(1, Localization.getString("mainWindow.swing.controlContextTabbedPane.fileMode"));
         this.controlContextTabbedPane.setTitleAt(2, Localization.getString("mainWindow.swing.controlContextTabbedPane.machineControl"));
+        this.controlContextTabbedPane.setTitleAt(3, Localization.getString("mainWindow.swing.controlContextTabbedPane.macros"));
         this.durationLabel.setText(Localization.getString("mainWindow.swing.durationLabel"));
         this.fileLabel.setText(Localization.getString("mainWindow.swing.fileLabel"));
         this.firmwareLabel.setText(Localization.getString("mainWindow.swing.firmwareLabel"));
@@ -2419,6 +2678,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
         this.stepSizeLabel.setText(Localization.getString("mainWindow.swing.stepSizeLabel"));
         this.visualizeButton.setText(Localization.getString("mainWindow.swing.visualizeButton"));
         this.workPositionLabel.setText(Localization.getString("mainWindow.swing.workPositionLabel"));
+        this.macroInstructions.setText(Localization.getString("mainWindow.swing.macroInstructions")+"yep");
     }
     
     // Scans for comm ports and puts them in the comm port combo box.
@@ -2811,6 +3071,16 @@ implements KeyListener, ControllerListener, MainWindowAPI {
     private javax.swing.JPanel connectionPanel;
     private javax.swing.JTextArea consoleTextArea;
     private javax.swing.JTabbedPane controlContextTabbedPane;
+    private javax.swing.JButton customGcodeButton1;
+    private javax.swing.JButton customGcodeButton2;
+    private javax.swing.JButton customGcodeButton3;
+    private javax.swing.JButton customGcodeButton4;
+    private javax.swing.JButton customGcodeButton5;
+    private javax.swing.JTextField customGcodeText1;
+    private javax.swing.JTextField customGcodeText2;
+    private javax.swing.JTextField customGcodeText3;
+    private javax.swing.JTextField customGcodeText4;
+    private javax.swing.JTextField customGcodeText5;
     private javax.swing.JLabel durationLabel;
     private javax.swing.JLabel durationValueLabel;
     private javax.swing.JLabel fileLabel;
@@ -2834,6 +3104,7 @@ implements KeyListener, ControllerListener, MainWindowAPI {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane1;
@@ -2850,6 +3121,8 @@ implements KeyListener, ControllerListener, MainWindowAPI {
     private javax.swing.JLabel machinePositionYValueLabel;
     private javax.swing.JLabel machinePositionZLabel;
     private javax.swing.JLabel machinePositionZValueLabel;
+    private javax.swing.JLabel macroInstructions;
+    private javax.swing.JPanel macroPanel;
     private javax.swing.JMenuBar mainMenuBar;
     private javax.swing.JPanel movementButtonPanel;
     private javax.swing.JButton opencloseButton;
